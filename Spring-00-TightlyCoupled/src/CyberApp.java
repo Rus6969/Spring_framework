@@ -3,6 +3,5 @@ public class CyberApp {
         FullTimeMentor fullTimeMentor = new FullTimeMentor();
         PartTimeMentor partTimeMentor = new PartTimeMentor();
         Mentor mentor = new Mentor(fullTimeMentor,partTimeMentor);
-
     }
 }
