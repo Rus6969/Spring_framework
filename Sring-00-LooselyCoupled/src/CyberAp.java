@@ -8,7 +8,7 @@ public class CyberAp {
         //FulltimeMentor fulltimeMentor= new FulltimeMentor();
         PartTimeMentor partTimeMentor = new PartTimeMentor();
 
-        MentorAccount mentor = new MentorAccount(partTimeMentor) ;
+        MentorAccount mentor = new MentorAccount(partTimeMentor);
         mentor.manageAccount();
 
 

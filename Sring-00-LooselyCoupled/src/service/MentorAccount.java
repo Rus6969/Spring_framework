@@ -3,7 +3,7 @@ package service;
 import implementation.Mentor;
 
 public class MentorAccount {
-    Mentor mentor ;
+    Mentor mentor;
 
     public MentorAccount(Mentor mentor) {
         this.mentor = mentor;
