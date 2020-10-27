@@ -9,15 +9,8 @@ public class CybertekApp {
 
         ApplicationContext container = new ClassPathXmlApplicationContext("config.xml");
 
-
         Course course = container.getBean("java",Course.class);
 
         course.getTeachingHours();
-
-        ((ClassPathXmlApplicationContext)container).close();
-
-
-
-
     }
 }
