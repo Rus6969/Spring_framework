@@ -1,33 +1,26 @@
 package com.cybertek.services;
 
-import com.cybertek.interfaces.Course;
-import com.cybertek.interfaces.Extrasessions;
+import com.cybertek.inrerfaces.Course;
+import com.cybertek.inrerfaces.ExtraSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 @Component
 public class Java implements Course {
-    private  Extrasessions extrasessions;
 
     @Value("${instructor}")
-    private String instructorname;
+    private String instructorName;
 
-    @Override
-    public String toString() {
-        return "Java{" +
-                "instructorname='" + instructorname + '\'' +
-                '}';
-    }
+    private ExtraSession extraSession;
 
     @Autowired
-    public Java(Extrasessions extrasessions) {
-        this.extrasessions = extrasessions;
+    public Java(ExtraSession extraSession) {
+        this.extraSession = extraSession;
     }
 
     @Override
-    public void teachingHours() {
-        System.out.println("teaching Java Classes "+(24+extrasessions.getHours()));
-
+    public int getTeachingHours() {
+        return 20 + extraSession.getHour();
     }
 }
