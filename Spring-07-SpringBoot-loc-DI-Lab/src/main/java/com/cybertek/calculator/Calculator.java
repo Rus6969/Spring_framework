@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 import java.math.BigDecimal;
+
 @Component
 public class Calculator {
 
@@ -30,4 +31,4 @@ public class Calculator {
 
         return "Total Cost for Carpet :" + (carpet.sqfFtPrice(city).multiply(floor.getArea()));
     }
-    }
+}

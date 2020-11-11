@@ -7,7 +7,7 @@ import lombok.Data;
 @Data
 public class Java implements Course {
     private ExtraSessions extraSessions;
-  //  private OfficeHours officeHours;
+    //  private OfficeHours officeHours;
 // here @Data gets for us getters and setters or we can do command N create getters setters
 //    public OfficeHours getOfficeHours() {
 //        return officeHours;

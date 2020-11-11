@@ -15,12 +15,12 @@ import org.springframework.context.annotation.PropertySource;
 public class CybertekAppConfig {
 
     @Bean
-    public Java java(){
+    public Java java() {
         return new Java(extraSessions());
     }
 
     @Bean
-    public Selenium selenium(){
+    public Selenium selenium() {
         return new Selenium();
     }
 /*
@@ -32,10 +32,9 @@ public class CybertekAppConfig {
  */
 
     //@Bean
-    public ExtraSessions extraSessions(){
+    public ExtraSessions extraSessions() {
         return new OfficeHours();
     }
-
 
 
 }

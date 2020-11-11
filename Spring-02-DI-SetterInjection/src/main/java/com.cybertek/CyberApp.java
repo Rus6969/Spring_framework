@@ -8,7 +8,7 @@ public class CyberApp {
     public static void main(String[] args) {
         ApplicationContext container = new ClassPathXmlApplicationContext("config.xml");
 
-        Course course = container.getBean("selenium",Course.class);
+        Course course = container.getBean("selenium", Course.class);
         course.getTeachingHours();
 
     }

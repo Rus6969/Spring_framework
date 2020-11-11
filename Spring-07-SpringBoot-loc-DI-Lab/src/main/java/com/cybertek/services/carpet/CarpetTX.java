@@ -8,6 +8,7 @@ import java.math.BigDecimal;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Optional;
+
 @Component
 public class CarpetTX implements Carpet {
     private static final Map<City, BigDecimal> sqPriceForCity = new HashMap<>();

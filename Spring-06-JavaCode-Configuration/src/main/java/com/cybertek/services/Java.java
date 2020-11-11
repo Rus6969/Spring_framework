@@ -18,15 +18,15 @@ public class Java implements Course {
 
     @Override
     public void teachingHours() {
-        System.out.println("Weekly teachig classes for Java " +(30+extraSessions.getHours()));
+        System.out.println("Weekly teachig classes for Java " + (30 + extraSessions.getHours()));
     }
 
-     @Value("batch12")
+    @Value("batch12")
     private String batch;
     @Value("${instructor}")
     private String instructor;
     @Value("${days}")
-    private String [] days;
+    private String[] days;
 
     @Override
     public String toString() {

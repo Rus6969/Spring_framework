@@ -1,5 +1,5 @@
 public class PartTimeMentor {
-    public void createAccount(){
+    public void createAccount() {
         System.out.println("Part Time Account is created");
     }
 }

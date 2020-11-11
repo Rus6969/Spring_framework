@@ -3,15 +3,15 @@ package service;
 import implementation.Mentor;
 
 
-    public class MentorAccount {
+public class MentorAccount {
 
-        Mentor mentor;
+    Mentor mentor;
 
-        public MentorAccount(Mentor mentor) {
-            this.mentor = mentor;
-        }
-
-        public void manageAccount(){
-            this.mentor.createAccount();
-        }
+    public MentorAccount(Mentor mentor) {
+        this.mentor = mentor;
     }
+
+    public void manageAccount() {
+        this.mentor.createAccount();
+    }
+}

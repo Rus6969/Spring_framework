@@ -16,11 +16,12 @@ public class Selenium implements Course {
 
 
     @PostConstruct
-    public void postConstruct(){
+    public void postConstruct() {
         System.out.println("Executing PostConstruct");
     }
+
     @PreDestroy
-    public void preDestroy(){
+    public void preDestroy() {
         System.out.println("Executing PostDestroy");
     }
 }

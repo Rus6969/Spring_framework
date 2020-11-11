@@ -13,6 +13,6 @@ public class Kitchen implements Floor {
 
     @Override
     public BigDecimal getArea() {
-        return radius.pow(2).multiply(new BigDecimal(Math.PI)) ;
+        return radius.pow(2).multiply(new BigDecimal(Math.PI));
     }
 }

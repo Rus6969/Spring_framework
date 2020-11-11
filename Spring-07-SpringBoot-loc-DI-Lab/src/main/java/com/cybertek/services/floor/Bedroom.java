@@ -8,7 +8,7 @@ import java.math.BigDecimal;
 
 
 @Component
-public class Bedroom  implements Floor {
+public class Bedroom implements Floor {
     @Value("${width}")
     BigDecimal width;
 

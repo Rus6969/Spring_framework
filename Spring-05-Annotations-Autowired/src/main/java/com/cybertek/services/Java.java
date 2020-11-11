@@ -8,10 +8,10 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class Java implements Course {
-     //@Autowired
+    //@Autowired
     private ExtraSessions officeHours;
 
-   //  @Autowired
+    //  @Autowired
     public Java(OfficeHours officeHours) {
         this.officeHours = officeHours;
     }
@@ -26,6 +26,6 @@ public class Java implements Course {
 
     @Override
     public void getTeachingHours() {
-        System.out.println("Weekly java hourse "+(30+officeHours.getHours()));
+        System.out.println("Weekly java hourse " + (30 + officeHours.getHours()));
     }
 }
