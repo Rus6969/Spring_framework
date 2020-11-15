@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Spisok</title>
+</head>
+<body>
+
+<table>
+    <thead>
+    <tr>
+        <td>Brand</td>
+        <td>Year</td>
+        <td>Engine</td>
+        <td>Color</td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="wheel : ${tachka}">
+        <td th:text="${wheel.getBrand()}"></td>
+        <td th:text="${wheel.getYear()}"></td>
+        <td th:text="${wheel.getEngine()}"></td>
+        <td th:text="${wheel.getColor()}"></td>
+
+    </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
