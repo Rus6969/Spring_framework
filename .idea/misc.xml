@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/Spring-01-SpringContainer/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring-02-DI-ConsttructorInjection/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring-02-DI-SetterInjection/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring-08-SpringBoot-MVC-Controller/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring-08-SpringBoot-MVC-Model-View(Thymeleaf)/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringBoot-MVC-Form/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="12" project-jdk-type="JavaSDK" />
+</project>
