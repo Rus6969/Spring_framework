@@ -6,12 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Spring-02-DI-SetterInjection" />
         <module name="Spring-01-SpringContainer" />
         <module name="Spring-08-SpringBoot-MVC-Form" />
+        <module name="Spring-09-ORM-TableCreation" />
+        <module name="cybertek" />
+        <module name="Spring-02-DI-SetterInjection" />
         <module name="cybertek (1)" />
         <module name="Spring-02-DI-ConstructorInjection" />
-        <module name="cybertek" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -21,11 +22,13 @@
       <module name="Spring-02-DI-ConstructorInjection" target="1.8" />
       <module name="Spring-02-DI-SetterInjection" target="1.8" />
       <module name="Spring-08-SpringBoot-MVC-Form" target="11" />
+      <module name="Spring-09-ORM-TableCreation" target="11" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="Spring-08-SpringBoot-MVC-Form" options="-parameters" />
+      <module name="Spring-09-ORM-TableCreation" options="-parameters" />
       <module name="cybertek" options="-parameters" />
       <module name="cybertek (1)" options="-parameters" />
     </option>
