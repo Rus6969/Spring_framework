@@ -8,8 +8,16 @@ public class Student {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String firstName;
+
+
+    @Column(name = "studentFirstName")
+    private String firstName;  //first_name
+    @Column(name = "studentLastName")
     private String lastName;
+    @Column(name = "studentEmailAddres")
     private String email;
+    // we use Transient annotaion to do naot map this pojo to DB
+    @Transient
+    private String city;
 
 }
