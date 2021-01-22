@@ -23,7 +23,7 @@ public class Student {
     private String lastName;
     @Column(name = "studentEmailAddres")
     private String email;
-    // we use Transient annotaion to do naot map this pojo to DB
+    // we use Transient annotaion to do not map this pojo to DB
     @Transient
     private String city;
     @Temporal(TemporalType.DATE)
@@ -32,7 +32,7 @@ public class Student {
     private Date birthTime;
     @Temporal(TemporalType.TIMESTAMP)
     private Date birthDateTime;
-// better put column defention might cause a problem in MVC
+// better put column defintion might cause a problem in MVC
     @Column(columnDefinition = "DATE")
     private LocalDate localDate;
     @Column(columnDefinition = "TIME")
