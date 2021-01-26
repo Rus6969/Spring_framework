@@ -40,6 +40,7 @@ public class Student {
     @Column(columnDefinition = "TIMESTAMP")
     private LocalDateTime localDateTime;
    // will take it as Integer need to convert to String
+
     @Enumerated(EnumType.STRING)
     private Gender gender ;
 
