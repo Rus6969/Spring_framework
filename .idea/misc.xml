@@ -11,6 +11,7 @@
         <option value="$PROJECT_DIR$/SpringBoot-MVC-Form/pom.xml" />
         <option value="$PROJECT_DIR$/Spring-09-ORM-TableCreation/pom.xml" />
         <option value="$PROJECT_DIR$/Spring-09-ORM-MApping-ONE-to-One/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring-09-ORM-ManyToOne/pom.xml" />
       </list>
     </option>
   </component>
