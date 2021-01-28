@@ -27,14 +27,12 @@ public class Employee extends BaseEntity {
     private Gender gender;
 
     private int salary;
-// we need cascade to create realtionship and what to do with department object (should we add it , merge , or detach)
-    @OneToOne(cascade = CascadeType.ALL)
+// we are not using cascade all bc we had to delete correspond object(whic is deartment since we are adress to department several times w need to change cascade)
+    @ManyToOne(cascade = {CascadeType.DETACH,CascadeType.MERGE,CascadeType.PERSIST},fetch = FetchType.LAZY)
     @JoinColumn(name = "department_id")
-    // @OneToOne(cascade = {CascadeType.DETACH,CascadeType.MERGE,CascadeType.PERSIST})
-    //example above means whenever I do actions in employeetable same actions will be done in department table
     private Department department;
 
-    @OneToOne(cascade = CascadeType.ALL,fetch = FetchType.LAZY)
+    @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name="region_id")
     private Region region;
 

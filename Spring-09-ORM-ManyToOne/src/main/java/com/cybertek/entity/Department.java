@@ -17,9 +17,6 @@ public class Department extends BaseEntity {
 
     private String department;
     private String division;
-// mapped by annotation is used to avoid creation t foreign keys , also we place here employee to use bidirectorial connection giving ownership to line 32 in Employee class
-    @OneToOne(mappedBy = "department")
-    private Employee employee;
 
     public Department(String department, String division) {
         this.department = department;
