@@ -34,7 +34,7 @@ public class Employee extends BaseEntity {
     //example above means whenever I do actions in employeetable same actions will be done in department table
     private Department department;
 
-    @OneToOne(cascade = CascadeType.ALL)
+    @OneToOne(cascade = CascadeType.ALL,fetch = FetchType.LAZY)
     @JoinColumn(name="region_id")
     private Region region;
 
