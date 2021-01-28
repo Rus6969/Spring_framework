@@ -2,6 +2,7 @@ package com.cybertek.bootstrap;
 
 import com.cybertek.entity.Department;
 import com.cybertek.entity.Employee;
+import com.cybertek.entity.Region;
 import com.cybertek.enums.Gender;
 import com.cybertek.repository.EmployeeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -61,10 +62,9 @@ public class DataGenerator implements CommandLineRunner {
             employeeList.addAll(Arrays.asList(e1, e2, e3, e4, e5));
             departmentList.addAll(Arrays.asList(d1, d2, d3, d4, d5));
 
-            EmployeeRepository.saveAll(employeeList);
+            employeeRepository.saveAll(employeeList);
 
 
         }
     }
 
-}
