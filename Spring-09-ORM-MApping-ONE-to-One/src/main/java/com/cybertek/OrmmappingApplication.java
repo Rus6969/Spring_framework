@@ -15,18 +15,12 @@ import java.time.LocalDateTime;
 
 @SpringBootApplication
 public class OrmmappingApplication {
-@Autowired
-	EmployeeRepository employeeRepository;
+
 
 	public static void main(String[] args) {
 		SpringApplication.run(OrmmappingApplication.class, args);
 	}
-     @PostConstruct
-	public void addEmployee(){
-		 Employee employee1 = new Employee("Ruslan","Samatov","russam4515@gmail.com", Date.valueOf("2020/04/23"), Gender.MALE,110000L);
 
-		 employeeRepository.save(employee1);
-	}
 
 
 }

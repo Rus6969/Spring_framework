@@ -7,7 +7,7 @@ import lombok.Setter;
 
 import javax.persistence.*;
 import java.time.LocalDate;
-import java.util.Date;
+
 
 @Entity
 @Table(name = "employees")
@@ -27,9 +27,11 @@ public class Employee extends BaseEntity {
     private Gender gender;
 
     private int salary;
-
+// we need cascade to create realtionship and what to do with department object (should we add it , merge , or detach)
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "department_id")
+    // @OneToOne(cascade = {CascadeType.DETACH,CascadeType.MERGE,CascadeType.PERSIST})
+    //example above means whenever I do actions in employeetable same actions will be done in department table
     private Department department;
 
     @OneToOne(cascade = CascadeType.ALL)
