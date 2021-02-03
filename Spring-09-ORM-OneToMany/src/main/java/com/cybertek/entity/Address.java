@@ -12,11 +12,6 @@ import javax.persistence.*;
 @Setter
 public class Address {
 
-    public Address(String street, String zipCode) {
-        this.street = street;
-        this.zipCode = zipCode;
-    }
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -26,4 +21,9 @@ public class Address {
 
     @ManyToOne
     private Person person;
+
+    public Address(String street, String zipCode) {
+        this.street = street;
+        this.zipCode = zipCode;
+    }
 }

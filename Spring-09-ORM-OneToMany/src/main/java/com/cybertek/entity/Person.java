@@ -16,6 +16,7 @@ public class Person {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
     private String firstName;
     private String lastName;
     // in one to many we need create container one person needs to match many addresses  we need put it as a collection
@@ -23,7 +24,7 @@ public class Person {
     private List<Address> addresses;
 
 
-    //case-1
+   // case-1 not preferable
 //    @OneToMany(cascade = CascadeType.ALL)
 //    @JoinColumn(name="person_id")
 //    private List<Address> addresses;
