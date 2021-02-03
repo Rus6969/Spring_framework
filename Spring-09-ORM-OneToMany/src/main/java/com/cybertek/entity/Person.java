@@ -19,8 +19,10 @@ public class Person {
     private Long id;
     private String firstName;
     private String lastName;
+
+
     // in one to many we need create container one person needs to match many addresses  we need put it as a collection
-    @OneToMany(mappedBy = "person")
+    @OneToMany(mappedBy = "person",cascade = CascadeType.ALL)
     private List<Address> addresses;
 
 
