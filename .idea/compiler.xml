@@ -10,6 +10,7 @@
         <module name="Spring-09-ORM-ManyToOne" />
         <module name="Spring-08-SpringBoot-MVC-Form" />
         <module name="Spring-09-ORM-TableCreation" />
+        <module name="Spring-09-ORM-Mapping-ManyToMAny" />
         <module name="cybertek" />
         <module name="Spring-09-ORM-OneToMany" />
         <module name="Spring-02-DI-SetterInjection" />
@@ -27,6 +28,7 @@
       <module name="Spring-02-DI-SetterInjection" target="1.8" />
       <module name="Spring-08-SpringBoot-MVC-Form" target="11" />
       <module name="Spring-09-ORM-ManyToOne" target="11" />
+      <module name="Spring-09-ORM-Mapping-ManyToMAny" target="11" />
       <module name="Spring-09-ORM-MApping-ONE-to-One" target="11" />
       <module name="Spring-09-ORM-OneToMany" target="11" />
       <module name="Spring-09-ORM-TableCreation" target="11" />
@@ -37,6 +39,7 @@
       <module name="Spring-08-SpringBoot-MVC-Form" options="-parameters" />
       <module name="Spring-09-ORM-MApping-ONE-to-One" options="-parameters" />
       <module name="Spring-09-ORM-ManyToOne" options="-parameters" />
+      <module name="Spring-09-ORM-Mapping-ManyToMAny" options="-parameters" />
       <module name="Spring-09-ORM-OneToMany" options="-parameters" />
       <module name="Spring-09-ORM-TableCreation" options="-parameters" />
       <module name="cybertek" options="-parameters" />
