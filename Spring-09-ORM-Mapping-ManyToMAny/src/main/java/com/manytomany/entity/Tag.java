@@ -20,4 +20,9 @@ public class Tag {
     private Long id;
 
     private String name;
+
+    // many to many works only with additionla table
+    public Tag(String name) {
+        this.name = name;
+    }
 }
