@@ -20,8 +20,10 @@ public class Post {
     private String title;
     private String description;
     // many to many works only with additionla table
-  //  when we work many to many we use set , bc of performance issue , if use lists hibernate will run queries twice
-    @ManyToMany
+    //  when we work many to many we use set , bc of performance issue , if use lists hibernate will run queries twice
+    @ManyToMany(cascade = {CascadeType.MERGE,CascadeType.PERSIST})
+    //change name for join table
+    @JoinTable(name = "posts_tag_rel", joinColumns = {@JoinColumn(name = "post_id")}, inverseJoinColumns = {@JoinColumn(name = "tag_id")})
     private Set<Tag> tags = new HashSet<>();
 
     public Post(String title, String description) {
