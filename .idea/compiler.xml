@@ -17,6 +17,7 @@
         <module name="cybertek (1)" />
         <module name="Spring-02-DI-ConstructorInjection" />
         <module name="Spring-09-ORM-MApping-ONE-to-One" />
+        <module name="Spring-09-ORM-CinemaLab" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -27,6 +28,7 @@
       <module name="Spring-02-DI-ConstructorInjection" target="1.8" />
       <module name="Spring-02-DI-SetterInjection" target="1.8" />
       <module name="Spring-08-SpringBoot-MVC-Form" target="11" />
+      <module name="Spring-09-ORM-CinemaLab" target="11" />
       <module name="Spring-09-ORM-ManyToOne" target="11" />
       <module name="Spring-09-ORM-Mapping-ManyToMAny" target="11" />
       <module name="Spring-09-ORM-MApping-ONE-to-One" target="11" />
@@ -37,6 +39,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="Spring-08-SpringBoot-MVC-Form" options="-parameters" />
+      <module name="Spring-09-ORM-CinemaLab" options="-parameters" />
       <module name="Spring-09-ORM-MApping-ONE-to-One" options="-parameters" />
       <module name="Spring-09-ORM-ManyToOne" options="-parameters" />
       <module name="Spring-09-ORM-Mapping-ManyToMAny" options="-parameters" />
