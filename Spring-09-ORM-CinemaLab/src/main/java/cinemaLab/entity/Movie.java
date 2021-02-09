@@ -45,5 +45,7 @@ public class Movie extends BaseEntity {
         this.type = type;
         this.state = state;
         this.price = price;
+
+        // when we use data SQL we are not using cascading. when we use bootstrap we use cascading
     }
 }
