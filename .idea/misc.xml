@@ -15,6 +15,7 @@
         <option value="$PROJECT_DIR$/Spring-09-ORM-OneToMany/pom.xml" />
         <option value="$PROJECT_DIR$/Spring-09-ORM-Mapping-ManyToMAny/pom.xml" />
         <option value="$PROJECT_DIR$/Spring-09-ORM-CinemaLab/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring-09-ORM-DrivedQueries/pom.xml" />
       </list>
     </option>
   </component>
