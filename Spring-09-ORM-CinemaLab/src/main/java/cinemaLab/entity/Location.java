@@ -7,11 +7,13 @@ import lombok.Setter;
 import javax.persistence.Entity;
 import java.math.BigDecimal;
 
+
 @Entity
 @Getter
 @Setter
 @NoArgsConstructor
 public class Location extends BaseEntity {
+
     private String name;
     private BigDecimal latitude;
     private BigDecimal langitude;

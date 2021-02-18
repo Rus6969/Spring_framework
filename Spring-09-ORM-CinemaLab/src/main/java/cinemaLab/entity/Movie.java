@@ -19,33 +19,35 @@ import java.util.List;
 public class Movie extends BaseEntity {
 
     private String name;
+
     @Column(columnDefinition = "DATE")
     private LocalDate releaseDate;
 
     private Integer duration;
-    // definition text helps avoid limitations in varchar we can write more charecters
+
     @Column(columnDefinition = "text")
     private String summary;
+
     @Enumerated(EnumType.STRING)
     private MovieType type;
+
     @Enumerated(EnumType.STRING)
     private MovieState state;
 
     private BigDecimal price;
+
     @ManyToMany
-    @JoinTable(name = "movie_genre_relationship", joinColumns = @JoinColumn(name = "movie_id"),
+    @JoinTable(name = "movie_genre_rel",
+            joinColumns = @JoinColumn(name = "movie_id"),
             inverseJoinColumns = @JoinColumn(name = "genre_id"))
     private List<Genre> genreList = new ArrayList<>();
 
-    public Movie(String name, LocalDate releaseDate, Integer duration, String summary, MovieType type, MovieState state, BigDecimal price) {
+    public Movie(String name, LocalDate releaseDate, Integer duration, MovieType type, MovieState state, BigDecimal price) {
         this.name = name;
         this.releaseDate = releaseDate;
         this.duration = duration;
-        this.summary = summary;
         this.type = type;
         this.state = state;
         this.price = price;
-
-        // when we use data SQL we are not using cascading. when we use bootstrap we use cascading
     }
 }

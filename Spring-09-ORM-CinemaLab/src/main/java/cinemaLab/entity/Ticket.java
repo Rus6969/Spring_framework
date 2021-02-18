@@ -7,6 +7,7 @@ import lombok.Setter;
 import javax.persistence.*;
 import java.time.LocalDateTime;
 
+
 @Entity
 @Getter
 @Setter
@@ -23,11 +24,11 @@ public class Ticket extends BaseEntity {
     private LocalDateTime dateTime;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "Movie_cinema_id")
+    @JoinColumn(name = "movie_cinema_id")
     private MovieCinema movieCinema;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "user_acount_id")
+    @JoinColumn(name = "user_account_id")
     private User user;
 
     public Ticket(Integer seatNumber, Integer rowNumber, LocalDateTime dateTime) {
@@ -36,5 +37,12 @@ public class Ticket extends BaseEntity {
         this.dateTime = dateTime;
     }
 
-
+    @Override
+    public String toString() {
+        return "Ticket{" +
+                "seatNumber=" + seatNumber +
+                ", rowNumber=" + rowNumber +
+                ", dateTime=" + dateTime +
+                '}';
+    }
 }
