@@ -1,5 +1,6 @@
 package com.cybertek;
 
+import com.cybertek.repository.DepartmentRepository;
 import com.cybertek.repository.RegionRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
@@ -16,6 +17,8 @@ public class DrivequeriesApplication {
 
     @Autowired
     RegionRepository regionRepository;
+    @Autowired
+    DepartmentRepository departmentRepository;
 
     @PostConstruct
     public void testRegion() {
@@ -30,8 +33,22 @@ public class DrivequeriesApplication {
 
         System.out.println("---------Regions End------------");
 
+    }
+        @PostConstruct
+        public void testDepartments () {
+
+            System.out.println("---------Department start------------");
+
+            System.out.println("findByDepartment: " + departmentRepository.findByDepartment("Toys"));
+            System.out.println("findByDivision: " + departmentRepository.findByDivision("Outdoors"));
+            System.out.println("findByDivisionEndingWith: " + departmentRepository.findByDivisionEndingWith("ics"));
+            System.out.println("findDistinctTop3ByDivisionContains: " + departmentRepository.findDistinctTop3ByDivisionContains("Hea"));
+
+            System.out.println("---------Department End------------");
+
+        }
 
 
     }
 
-}
+
