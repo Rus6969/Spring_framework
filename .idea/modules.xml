@@ -10,6 +10,7 @@
       <module fileurl="file://$PROJECT_DIR$/Spring-09-ORM-DrivedQueries/Spring-09-ORM-DrivedQueries.iml" filepath="$PROJECT_DIR$/Spring-09-ORM-DrivedQueries/Spring-09-ORM-DrivedQueries.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring-09-ORM-MApping-ONE-to-One/Spring-09-ORM-MApping-ONE-to-One.iml" filepath="$PROJECT_DIR$/Spring-09-ORM-MApping-ONE-to-One/Spring-09-ORM-MApping-ONE-to-One.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring-09-ORM-ManyToOne/Spring-09-ORM-ManyToOne.iml" filepath="$PROJECT_DIR$/Spring-09-ORM-ManyToOne/Spring-09-ORM-ManyToOne.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring-09-ORM-Mapping-JPQL-Namedqueries/Spring-09-ORM-Mapping-JPQL-Namedqueries.iml" filepath="$PROJECT_DIR$/Spring-09-ORM-Mapping-JPQL-Namedqueries/Spring-09-ORM-Mapping-JPQL-Namedqueries.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring-09-ORM-Mapping-ManyToMAny/Spring-09-ORM-Mapping-ManyToMAny.iml" filepath="$PROJECT_DIR$/Spring-09-ORM-Mapping-ManyToMAny/Spring-09-ORM-Mapping-ManyToMAny.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring-09-ORM-OneToMany/Spring-09-ORM-OneToMany.iml" filepath="$PROJECT_DIR$/Spring-09-ORM-OneToMany/Spring-09-ORM-OneToMany.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring-09-ORM-TableCreation/Spring-09-ORM-TableCreation.iml" filepath="$PROJECT_DIR$/Spring-09-ORM-TableCreation/Spring-09-ORM-TableCreation.iml" />
