@@ -1,6 +1,7 @@
 package com.cybertek;
 
 import com.cybertek.repository.DepartmentRepository;
+import com.cybertek.repository.EmployeeRepository;
 import com.cybertek.repository.RegionRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
@@ -19,6 +20,8 @@ public class DrivequeriesApplication {
     RegionRepository regionRepository;
     @Autowired
     DepartmentRepository departmentRepository;
+    @Autowired
+    EmployeeRepository employeeRepository;
 
     @PostConstruct
     public void testRegion() {
@@ -34,21 +37,32 @@ public class DrivequeriesApplication {
         System.out.println("---------Regions End------------");
 
     }
-        @PostConstruct
-        public void testDepartments () {
 
-            System.out.println("---------Department start------------");
+    @PostConstruct
+    public void testDepartments() {
 
-            System.out.println("findByDepartment: " + departmentRepository.findByDepartment("Toys"));
-            System.out.println("findByDivision: " + departmentRepository.findByDivision("Outdoors"));
-            System.out.println("findByDivisionEndingWith: " + departmentRepository.findByDivisionEndingWith("ics"));
-            System.out.println("findDistinctTop3ByDivisionContains: " + departmentRepository.findDistinctTop3ByDivisionContains("Hea"));
+        System.out.println("---------Department start------------");
 
-            System.out.println("---------Department End------------");
+        System.out.println("findByDepartment: " + departmentRepository.findByDepartment("Toys"));
+        System.out.println("findByDivision: " + departmentRepository.findByDivision("Outdoors"));
+        System.out.println("findByDivisionEndingWith: " + departmentRepository.findByDivisionEndingWith("ics"));
+        System.out.println("findDistinctTop3ByDivisionContains: " + departmentRepository.findDistinctTop3ByDivisionContains("Hea"));
 
-        }
 
+        System.out.println("---------Department End------------");
+    }
+
+    @PostConstruct
+    public void testEmployees() {
+
+        System.out.println("findSalary greater than " + employeeRepository.findBySalaryGreaterThan(5000000));
+        System.out.println("findby salary greatef order by salary " +employeeRepository.findBySalaryIsGreaterThanEqualOrderBySalaryDesc(140000));
 
     }
+
+}
+
+
+
 
 
