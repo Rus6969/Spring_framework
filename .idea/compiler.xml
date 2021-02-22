@@ -12,6 +12,7 @@
         <module name="cybertek" />
         <module name="Spring-09-ORM-OneToMany" />
         <module name="Spring-02-DI-SetterInjection" />
+        <module name="Spring-09-ORM-Mapping-JPQL-Namedqueries" />
         <module name="cybertek (1)" />
         <module name="Spring-01-SpringContainer" />
         <module name="Spring-09-ORM-ManyToOne" />
@@ -32,6 +33,7 @@
       <module name="Spring-09-ORM-CinemaLab" target="11" />
       <module name="Spring-09-ORM-DrivedQueries" target="11" />
       <module name="Spring-09-ORM-ManyToOne" target="11" />
+      <module name="Spring-09-ORM-Mapping-JPQL-Namedqueries" target="11" />
       <module name="Spring-09-ORM-Mapping-ManyToMAny" target="11" />
       <module name="Spring-09-ORM-MApping-ONE-to-One" target="11" />
       <module name="Spring-09-ORM-OneToMany" target="11" />
@@ -45,6 +47,7 @@
       <module name="Spring-09-ORM-DrivedQueries" options="-parameters" />
       <module name="Spring-09-ORM-MApping-ONE-to-One" options="-parameters" />
       <module name="Spring-09-ORM-ManyToOne" options="-parameters" />
+      <module name="Spring-09-ORM-Mapping-JPQL-Namedqueries" options="-parameters" />
       <module name="Spring-09-ORM-Mapping-ManyToMAny" options="-parameters" />
       <module name="Spring-09-ORM-OneToMany" options="-parameters" />
       <module name="Spring-09-ORM-TableCreation" options="-parameters" />
