@@ -27,7 +27,7 @@ public class MovieCinema extends BaseEntity {
     public MovieCinema(LocalDateTime dateTime) {
         this.dateTime = dateTime;
     }
-
+//do not use lombook to string if its already used in previous class use own constructoe map only what missing
     @Override
     public String toString() {
         return "MovieCinema{" +
