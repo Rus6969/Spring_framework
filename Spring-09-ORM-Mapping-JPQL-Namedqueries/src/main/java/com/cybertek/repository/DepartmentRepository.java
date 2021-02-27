@@ -29,4 +29,6 @@ Named Queries – Property File
  // in properties file we are doing concatenation since we are using parameters
     @Query(nativeQuery = true)
     List<Department> retrieveDepartmentByDivisionContains(String pattern);
+
+    List<Department>findRussellDepartmet(String division);
 }
