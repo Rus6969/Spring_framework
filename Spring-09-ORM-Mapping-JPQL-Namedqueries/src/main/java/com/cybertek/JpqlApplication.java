@@ -29,6 +29,7 @@ public class JpqlApplication {
 		System.out.println();
 		employeeRepository.updateEmployeeJPQL(1);
 		System.out.println("-0-0-0-0-0-0-0-0-0-0-0-");
+		System.out.println(employeeRepository.retrieveEmployeeSalaryGreaterThan(20000));
 
 	}
 
