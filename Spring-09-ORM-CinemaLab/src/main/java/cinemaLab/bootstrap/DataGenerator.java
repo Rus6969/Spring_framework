@@ -13,15 +13,16 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.Arrays;
 import java.util.List;
-
-@Component
+//@Component
 public class DataGenerator implements CommandLineRunner {
-    private final MovieRepository movieRepository;
-    private final CinemaRepository cinemaRepository;
-    private final GenreRepository genreRepository;
-    private final UserRepository userRepository;
-    private final MovieCinemaRepository movieCinemaRepository;
-    private final TicketRepository ticketRepository;
+
+    private MovieRepository movieRepository;
+    private CinemaRepository cinemaRepository;
+    private GenreRepository genreRepository;
+    private UserRepository userRepository;
+    private MovieCinemaRepository movieCinemaRepository;
+    private TicketRepository ticketRepository;
+
     public DataGenerator(MovieRepository movieRepository, CinemaRepository cinemaRepository, GenreRepository genreRepository, UserRepository userRepository, MovieCinemaRepository movieCinemaRepository, TicketRepository ticketRepository) {
         this.movieRepository = movieRepository;
         this.cinemaRepository = cinemaRepository;
@@ -69,6 +70,7 @@ public class DataGenerator implements CommandLineRunner {
     public Movie m7 = new Movie("The Nights Before Christmas",LocalDate.of(2020,11,19), 100, MovieType.REGULAR, MovieState.ACTIVE,new BigDecimal("28.00"));
     public Movie m8 = new Movie("Spider-Man: Miles Morales",LocalDate.of(2020,12,12), 130, MovieType.REGULAR, MovieState.DRAFT,new BigDecimal("28.00"));
     public Movie m9 = new Movie("Avengers: Endgame",LocalDate.of(2019,4,26), 181, MovieType.REGULAR, MovieState.DRAFT,new BigDecimal("48.00"));
+
     /**
      * Movie Cinema objects.
      */
@@ -100,6 +102,7 @@ public class DataGenerator implements CommandLineRunner {
     public MovieCinema mc26 = new MovieCinema(LocalDateTime.of(2020,12,26,19,00));
     public MovieCinema mc27 = new MovieCinema(LocalDateTime.of(2020,12,26,19,45));
     public MovieCinema mc28 = new MovieCinema(LocalDateTime.of(2020,12,26,22,00));
+
     Account a1 = new Account("Josie D Story", "262  Lochmere Lane", "United States", "Kentucky", "LOUISVILLE", 35, "40289", UserRole.USER);
     Account a2 = new Account("Bernard P Fendley", "2903  Jarvis Street", "United States", "New York", "Buffalo", 28, "14211", UserRole.USER);
     Account a3 = new Account("Faith R Parsons", "4161  Alfred Drive", "United States", "New York", "Brooklyn", 47, "11226", UserRole.USER);
@@ -155,6 +158,8 @@ public class DataGenerator implements CommandLineRunner {
      * Create users.
      */
     private void createUsers() {
+
+
         u1.setAccount(a1);
         u2.setAccount(a2);
         u3.setAccount(a3);
@@ -189,8 +194,10 @@ public class DataGenerator implements CommandLineRunner {
      * Create movies and genres.
      */
     private void createMoviesAndGenres() {
+
         List<Genre> genre = Arrays.asList(g1, g2, g3, g4, g5, g6, g7, g8, g9, g10, g11, g12, g13);
         genreRepository.saveAll(genre);
+
         m1.setSummary("An American expat tries to sell off his highly profitable marijuana empire in London, triggering plots, schemes, bribery and blackmail in an attempt to steal his domain out from under him.");
         m2.setSummary("After John Nash, a brilliant but asocial mathematician, accepts secret work in cryptography, his life takes a turn for the nightmarish.");
         m3.setSummary("Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency");
@@ -210,6 +217,7 @@ public class DataGenerator implements CommandLineRunner {
         m8.setGenreList(Arrays.asList(g3, g8, g10));
         m9.setGenreList(Arrays.asList(g3, g10));
         List<Movie> movies = Arrays.asList(m1, m2, m3, m4, m5, m6, m7, m8, m9);
+
         movieRepository.saveAll(movies);
     }
     /**
@@ -321,6 +329,7 @@ public class DataGenerator implements CommandLineRunner {
         t20.setMovieCinema(mc17);
         List<Ticket> tickets = Arrays.asList(t1, t2, t3, t4, t5, t6, t7, t8, t9, t10, t11, t12, t13, t14, t15, t16, t17, t18, t19, t20);
         ticketRepository.saveAll(tickets);
-
     }
+
+
 }
