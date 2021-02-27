@@ -12,7 +12,7 @@ import javax.annotation.PostConstruct;
 import java.time.LocalDateTime;
 
 @SpringBootApplication
-public class CinemaappApplication {
+public class DemoApplication {
 	@Autowired
 	AccountRepository accountRepository;
 	@Autowired
@@ -23,7 +23,7 @@ public class CinemaappApplication {
 	TicketRepository ticketRepository;
 
 	public static void main(String[] args) {
-		SpringApplication.run(CinemaappApplication.class, args);
+		SpringApplication.run(DemoApplication.class, args);
 	}
 
 	@PostConstruct
@@ -37,3 +37,5 @@ public class CinemaappApplication {
 		System.out.println(ticketRepository.retrieveAllBySearchCriteria("it"));
 	}
 
+
+}
