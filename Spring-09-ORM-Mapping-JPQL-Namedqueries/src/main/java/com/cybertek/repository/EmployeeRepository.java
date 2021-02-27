@@ -75,6 +75,9 @@ public interface EmployeeRepository extends JpaRepository<Employee,Long> {
     @Query("select e from Employee  e order by e.salary desc ")
     List<Employee>getEmployeeBySalaryOrderByDesc();
 
+    // Native query direct through DB not ENTITY !!! ! we using name of db not Entity name
+     @Query(value = "select * from Employees where salary = ?1",nativeQuery = true)
+    List<Employee>rwdEmployeeBySalary(int salary);
 
 
 }
