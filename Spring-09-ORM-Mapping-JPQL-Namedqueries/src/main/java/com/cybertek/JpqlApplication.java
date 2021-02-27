@@ -1,12 +1,9 @@
 package com.cybertek;
-
-import com.cybertek.entity.Employee;
 import com.cybertek.repository.DepartmentRepository;
 import com.cybertek.repository.EmployeeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-
 import javax.annotation.PostConstruct;
 
 @SpringBootApplication
