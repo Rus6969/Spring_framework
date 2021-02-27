@@ -32,6 +32,8 @@ public class JpqlApplication {
 		System.out.println(employeeRepository.retrieveEmployeeSalaryGreaterThan(20000));
 		System.out.println("10100101010101010101010100101010100110010101010101010101");
 		System.out.println(departmentRepository.findRussellDepartmet("Kids"));
+		System.out.println("NUMBER OF ALL DEPARTMENTS ");
+		System.out.println(departmentRepository.countAllDepartments());
 
 	}
 

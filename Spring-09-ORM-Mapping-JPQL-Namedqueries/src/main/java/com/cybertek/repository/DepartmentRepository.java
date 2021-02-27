@@ -31,4 +31,7 @@ Named Queries – Property File
     List<Department> retrieveDepartmentByDivisionContains(String pattern);
 
     List<Department>findRussellDepartmet(String division);
+// Named Native
+  List<Department>countAllDepartments();
+
 }
