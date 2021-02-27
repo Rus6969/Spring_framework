@@ -20,7 +20,7 @@ public interface EmployeeRepository extends JpaRepository<Employee,Long> {
     Integer getEmployeeSalary();
 
     // with parameters/  positional parameters
-     // single blind parameter
+     // single bind parameter
     @Query("select e from Employee e where e.email = ?1")
     Optional<Employee>getEmployeeByEmail(String email);
 
@@ -72,6 +72,8 @@ public interface EmployeeRepository extends JpaRepository<Employee,Long> {
     //Sort Salary in ascending order
     @Query("SELECT e FROM Employee e ORDER BY e.salary")
     List<Employee> getEmployeeBySalaryOrderByAsc();
+    @Query("select e from Employee  e order by e.salary desc ")
+    List<Employee>getEmployeeBySalaryOrderByDesc();
 
 
 
