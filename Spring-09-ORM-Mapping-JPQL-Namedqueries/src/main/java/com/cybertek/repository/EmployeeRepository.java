@@ -90,11 +90,15 @@ public interface EmployeeRepository extends JpaRepository<Employee,Long> {
     void updateEmployeeJPQL(@Param("id") Integer id);
 
 
-    // to do mofifications like update delete etc for SQL
+    // to do modifications like update delete etc for SQL
     @Modifying
     @Transactional
     @Query(value = "UPDATE employees SET email='admin@email.com' WHERE id=:id",nativeQuery = true)
     void updateEmployeeNativeQuery(@Param("id") Integer id);
+
+
+    //Named query
+    List<Employee>retrieveEmployeeSalaryGreaterThan(Integer Salary);
 
 
 
