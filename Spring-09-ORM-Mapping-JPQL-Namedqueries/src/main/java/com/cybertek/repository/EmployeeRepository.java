@@ -2,9 +2,13 @@ package com.cybertek.repository;
 
 import com.cybertek.entity.Employee;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Modifying;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.time.LocalDate;
 import java.util.List;
@@ -38,7 +42,6 @@ public interface EmployeeRepository extends JpaRepository<Employee,Long> {
     //NOT equal
     @Query("select e from Employee e where e.salary <>?1")
     List<Employee>getEmployeeBySalaryNotEqual(int salary);
-
 
 
     //Like / Contains / StartsWith / Ends With
@@ -78,6 +81,21 @@ public interface EmployeeRepository extends JpaRepository<Employee,Long> {
     // Native query direct through DB not ENTITY !!! ! we using name of db not Entity name
      @Query(value = "select * from Employees where salary = ?1",nativeQuery = true)
     List<Employee>rwdEmployeeBySalary(int salary);
+
+
+     // to do mofifications like update delete etc for JPQL
+    @Modifying
+    @Transactional
+    @Query("UPDATE Employee e SET e.email ='admin@email.com' WHERE e.id=:id")
+    void updateEmployeeJPQL(@Param("id") Integer id);
+
+
+    // to do mofifications like update delete etc for SQL
+    @Modifying
+    @Transactional
+    @Query(value = "UPDATE employees SET email='admin@email.com' WHERE id=:id",nativeQuery = true)
+    void updateEmployeeNativeQuery(@Param("id") Integer id);
+
 
 
 }
