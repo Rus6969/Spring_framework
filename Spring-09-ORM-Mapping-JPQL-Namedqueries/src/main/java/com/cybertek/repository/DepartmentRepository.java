@@ -35,5 +35,7 @@ Named Queries – Property File
 
 // Named Native
   List<Department>countAllDepartments();
+  // since we are returning only number of departmets not department object we do not neet list also look in Department Entity
+  Integer countDepartments();
 
 }

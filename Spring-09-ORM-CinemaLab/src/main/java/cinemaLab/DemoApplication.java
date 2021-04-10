@@ -29,7 +29,7 @@ public class DemoApplication {
 	@PostConstruct
 	public void testAccount(){
 		System.out.println(accountRepository.fetchAdminUsers());
-		System.out.println(cinemaRepository.distinctBYSponsoredName());
+		//System.out.println(cinemaRepository.distinctBYSponsoredName());
 		System.out.println(movieCinemaRepository.countAllByCinemaId(4L));
 		System.out.println(movieCinemaRepository.retrieveAllByLocationName("AMC Empire 25"));
 		System.out.println(ticketRepository.fetchAllTicketsByUserJPQL(4l));
