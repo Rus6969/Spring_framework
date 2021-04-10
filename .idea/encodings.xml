@@ -11,6 +11,8 @@
     <file url="file://$PROJECT_DIR$/Spring-09-ORM-Mapping-ManyToMAny/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Spring-09-ORM-OneToMany/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Spring-09-ORM-TableCreation/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring-10-SecurityDefaultConfiguration/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring-10-SecurityDefaultConfiguration/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringBoot-MVC-Form/src/main/java" charset="UTF-8" />
   </component>
 </project>
