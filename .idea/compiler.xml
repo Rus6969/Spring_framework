@@ -17,6 +17,7 @@
         <module name="Spring-01-SpringContainer" />
         <module name="Spring-09-ORM-ManyToOne" />
         <module name="Spring-10-SecurityDefaultConfiguration" />
+        <module name="Spring-10-Security-CustomConfiguration" />
         <module name="Spring-02-DI-ConstructorInjection" />
         <module name="Spring-09-ORM-MApping-ONE-to-One" />
         <module name="Spring-09-ORM-DrivedQueries" />
@@ -40,6 +41,7 @@
       <module name="Spring-09-ORM-MApping-ONE-to-One" target="11" />
       <module name="Spring-09-ORM-OneToMany" target="11" />
       <module name="Spring-09-ORM-TableCreation" target="11" />
+      <module name="Spring-10-Security-CustomConfiguration" target="11" />
       <module name="Spring-10-SecurityDefaultConfiguration" target="11" />
     </bytecodeTargetLevel>
   </component>
@@ -54,6 +56,7 @@
       <module name="Spring-09-ORM-Mapping-ManyToMAny" options="-parameters" />
       <module name="Spring-09-ORM-OneToMany" options="-parameters" />
       <module name="Spring-09-ORM-TableCreation" options="-parameters" />
+      <module name="Spring-10-Security-CustomConfiguration" options="-parameters" />
       <module name="Spring-10-SecurityDefaultConfiguration" options="-parameters" />
       <module name="cybertek" options="-parameters" />
       <module name="cybertek (1)" options="-parameters" />
