@@ -17,6 +17,7 @@
       <module fileurl="file://$PROJECT_DIR$/Spring-09-SQL-review/Spring-09-SQL-review.iml" filepath="$PROJECT_DIR$/Spring-09-SQL-review/Spring-09-SQL-review.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring-10-Security-CustomConfiguration/Spring-10-Security-CustomConfiguration.iml" filepath="$PROJECT_DIR$/Spring-10-Security-CustomConfiguration/Spring-10-Security-CustomConfiguration.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring-10-SecurityDefaultConfiguration/Spring-10-SecurityDefaultConfiguration.iml" filepath="$PROJECT_DIR$/Spring-10-SecurityDefaultConfiguration/Spring-10-SecurityDefaultConfiguration.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring-10-SecurityHTTPBasic-AuthorizationRoleBAse/Spring-10-SecurityHTTPBasic-AuthorizationRoleBAse.iml" filepath="$PROJECT_DIR$/Spring-10-SecurityHTTPBasic-AuthorizationRoleBAse/Spring-10-SecurityHTTPBasic-AuthorizationRoleBAse.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Spring_framework.iml" filepath="$PROJECT_DIR$/.idea/Spring_framework.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring-08-SpringBoot-MVC-Controller/cybertek.iml" filepath="$PROJECT_DIR$/Spring-08-SpringBoot-MVC-Controller/cybertek.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring-08-SpringBoot-MVC-Model-View(Thymeleaf)/cybertek (1).iml" filepath="$PROJECT_DIR$/Spring-08-SpringBoot-MVC-Model-View(Thymeleaf)/cybertek (1).iml" />
