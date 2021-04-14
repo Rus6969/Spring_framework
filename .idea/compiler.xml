@@ -14,6 +14,7 @@
         <module name="Spring-02-DI-SetterInjection" />
         <module name="Spring-09-ORM-Mapping-JPQL-Namedqueries" />
         <module name="cybertek (1)" />
+        <module name="Spring-10-Secutity-HttpBasic-DataBase" />
         <module name="Spring-01-SpringContainer" />
         <module name="Spring-09-ORM-ManyToOne" />
         <module name="Spring-10-SecurityHTTPBasic-AuthorizationRoleBAse" />
@@ -45,6 +46,7 @@
       <module name="Spring-10-Security-CustomConfiguration" target="11" />
       <module name="Spring-10-SecurityDefaultConfiguration" target="11" />
       <module name="Spring-10-SecurityHTTPBasic-AuthorizationRoleBAse" target="11" />
+      <module name="Spring-10-Secutity-HttpBasic-DataBase" target="11" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -61,6 +63,7 @@
       <module name="Spring-10-Security-CustomConfiguration" options="-parameters" />
       <module name="Spring-10-SecurityDefaultConfiguration" options="-parameters" />
       <module name="Spring-10-SecurityHTTPBasic-AuthorizationRoleBAse" options="-parameters" />
+      <module name="Spring-10-Secutity-HttpBasic-DataBase" options="-parameters" />
       <module name="cybertek" options="-parameters" />
       <module name="cybertek (1)" options="-parameters" />
       <module name="orm3" options="-parameters" />
