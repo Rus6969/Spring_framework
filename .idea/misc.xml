@@ -22,6 +22,7 @@
         <option value="$PROJECT_DIR$/Spring-10-Security-CustomConfiguration/pom.xml" />
         <option value="$PROJECT_DIR$/Spring-10-SecurityHTTPBasic-AuthorizationRoleBAse/pom.xml" />
         <option value="$PROJECT_DIR$/Spring-10-Secutity-HttpBasic-DataBase/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring-10-Security-Form-Auth/pom.xml" />
       </list>
     </option>
   </component>
