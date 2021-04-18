@@ -17,6 +17,7 @@
         <module name="Spring-10-Secutity-HttpBasic-DataBase" />
         <module name="Spring-01-SpringContainer" />
         <module name="Spring-09-ORM-ManyToOne" />
+        <module name="Spring-10-Security-Form-Auth" />
         <module name="Spring-10-SecurityHTTPBasic-AuthorizationRoleBAse" />
         <module name="Spring-10-SecurityDefaultConfiguration" />
         <module name="Spring-10-Security-CustomConfiguration" />
@@ -44,6 +45,7 @@
       <module name="Spring-09-ORM-OneToMany" target="11" />
       <module name="Spring-09-ORM-TableCreation" target="11" />
       <module name="Spring-10-Security-CustomConfiguration" target="11" />
+      <module name="Spring-10-Security-Form-Auth" target="11" />
       <module name="Spring-10-SecurityDefaultConfiguration" target="11" />
       <module name="Spring-10-SecurityHTTPBasic-AuthorizationRoleBAse" target="11" />
       <module name="Spring-10-Secutity-HttpBasic-DataBase" target="11" />
@@ -61,6 +63,7 @@
       <module name="Spring-09-ORM-OneToMany" options="-parameters" />
       <module name="Spring-09-ORM-TableCreation" options="-parameters" />
       <module name="Spring-10-Security-CustomConfiguration" options="-parameters" />
+      <module name="Spring-10-Security-Form-Auth" options="-parameters" />
       <module name="Spring-10-SecurityDefaultConfiguration" options="-parameters" />
       <module name="Spring-10-SecurityHTTPBasic-AuthorizationRoleBAse" options="-parameters" />
       <module name="Spring-10-Secutity-HttpBasic-DataBase" options="-parameters" />
