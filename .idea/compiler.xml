@@ -2,12 +2,14 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Spring-08-SpringBoot-MVC-Form" />
         <module name="Spring-09-ORM-TableCreation" />
+        <module name="Spring-11-Rest-Http-Legacy" />
         <module name="Spring-09-ORM-Mapping-ManyToMAny" />
         <module name="cybertek" />
         <module name="Spring-09-ORM-OneToMany" />
@@ -49,6 +51,7 @@
       <module name="Spring-10-SecurityDefaultConfiguration" target="11" />
       <module name="Spring-10-SecurityHTTPBasic-AuthorizationRoleBAse" target="11" />
       <module name="Spring-10-Secutity-HttpBasic-DataBase" target="11" />
+      <module name="Spring-11-Rest-Http-Legacy" target="11" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -67,6 +70,7 @@
       <module name="Spring-10-SecurityDefaultConfiguration" options="-parameters" />
       <module name="Spring-10-SecurityHTTPBasic-AuthorizationRoleBAse" options="-parameters" />
       <module name="Spring-10-Secutity-HttpBasic-DataBase" options="-parameters" />
+      <module name="Spring-11-Rest-Http-Legacy" options="-parameters" />
       <module name="cybertek" options="-parameters" />
       <module name="cybertek (1)" options="-parameters" />
       <module name="orm3" options="-parameters" />
