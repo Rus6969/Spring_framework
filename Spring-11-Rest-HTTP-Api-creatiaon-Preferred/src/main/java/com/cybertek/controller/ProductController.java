@@ -16,31 +16,31 @@ public class ProductController {
     private ProductService productService;
 
     // / creating an endpoint
-    @RequestMapping(value = "{id}", method = RequestMethod.GET)
+    @GetMapping(value = "{id}")
     public Product getProduct(@PathVariable("id") Long id) {
         return productService.getProduct(id);
     }
 
     // default is get so we do not need to add it
-    @RequestMapping
+    @GetMapping
     public List<Product> findAllProducts() {
         return productService.getProducts();
     }
 
-    @RequestMapping(value = "{id}", method = RequestMethod.DELETE)
+    @DeleteMapping(value = "{id}")
     public List<Product> deleteProduct(@PathVariable("id") Long id) {
         return productService.delete(id);
     }
 
     //add product :
-    @RequestMapping( method = RequestMethod.POST)
+    @PostMapping
     // RequestBody) we need when we want post something
     public List<Product> creatProduct(@RequestBody Product product) {
         return productService.createProduct(product);
     }
 
     //update product
-    @RequestMapping(value = "{id}", method = RequestMethod.PUT)
+    @PutMapping(value = "{id}")
     // RequestBody) we need when we want post something
     public List<Product> Updateroduct(@PathVariable("id") Long id, @RequestBody Product product) {
         return productService.createProduct(product);
