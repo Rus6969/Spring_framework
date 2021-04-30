@@ -7,45 +7,42 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-
-@Controller
+// equal controller = responsebody
+@RestController
+// we add requstnapping at class level so we do not use it in each api
+@RequestMapping("/products")
 public class ProductController {
     @Autowired
     private ProductService productService;
 
     // / creating an endpoint
-    @RequestMapping(value = "/products/{id}", method = RequestMethod.GET)
-    public @ResponseBody
-    Product getProduct(@PathVariable("id") Long id) {
+    @RequestMapping(value = "{id}", method = RequestMethod.GET)
+    public Product getProduct(@PathVariable("id") Long id) {
         return productService.getProduct(id);
     }
 
     // default is get so we do not need to add it
-    @RequestMapping(value = "/products")
-    public @ResponseBody
-    List<Product> findAllProducts() {
+    @RequestMapping
+    public List<Product> findAllProducts() {
         return productService.getProducts();
     }
 
-    @RequestMapping(value = "products/delete{id}", method = RequestMethod.DELETE)
-    public @ResponseBody
-    List<Product> deleteProduct(@PathVariable("id") Long id) {
+    @RequestMapping(value = "{id}", method = RequestMethod.DELETE)
+    public List<Product> deleteProduct(@PathVariable("id") Long id) {
         return productService.delete(id);
     }
 
     //add product :
-    @RequestMapping(value = "/products", method = RequestMethod.POST)
+    @RequestMapping( method = RequestMethod.POST)
     // RequestBody) we need when we want post something
-    public @ResponseBody
-    List<Product> creatProduct(@RequestBody Product product) {
+    public List<Product> creatProduct(@RequestBody Product product) {
         return productService.createProduct(product);
     }
 
     //update product
-    @RequestMapping(value = "/products/{id}", method = RequestMethod.PUT)
+    @RequestMapping(value = "{id}", method = RequestMethod.PUT)
     // RequestBody) we need when we want post something
-    public @ResponseBody
-    List<Product> Updateroduct(@PathVariable("id") Long id, @RequestBody Product product) {
+    public List<Product> Updateroduct(@PathVariable("id") Long id, @RequestBody Product product) {
         return productService.createProduct(product);
     }
 
