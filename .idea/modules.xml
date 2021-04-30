@@ -20,6 +20,7 @@
       <module fileurl="file://$PROJECT_DIR$/Spring-10-SecurityDefaultConfiguration/Spring-10-SecurityDefaultConfiguration.iml" filepath="$PROJECT_DIR$/Spring-10-SecurityDefaultConfiguration/Spring-10-SecurityDefaultConfiguration.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring-10-SecurityHTTPBasic-AuthorizationRoleBAse/Spring-10-SecurityHTTPBasic-AuthorizationRoleBAse.iml" filepath="$PROJECT_DIR$/Spring-10-SecurityHTTPBasic-AuthorizationRoleBAse/Spring-10-SecurityHTTPBasic-AuthorizationRoleBAse.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring-10-Secutity-HttpBasic-DataBase/Spring-10-Secutity-HttpBasic-DataBase.iml" filepath="$PROJECT_DIR$/Spring-10-Secutity-HttpBasic-DataBase/Spring-10-Secutity-HttpBasic-DataBase.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring-11-Rest-HTTP-Api-creatiaon-Preferred/Spring-11-Rest-HTTP-Api-creatiaon-Preferred.iml" filepath="$PROJECT_DIR$/Spring-11-Rest-HTTP-Api-creatiaon-Preferred/Spring-11-Rest-HTTP-Api-creatiaon-Preferred.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring-11-Rest-Http-Legacy/Spring-11-Rest-Http-Legacy.iml" filepath="$PROJECT_DIR$/Spring-11-Rest-Http-Legacy/Spring-11-Rest-Http-Legacy.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Spring_framework.iml" filepath="$PROJECT_DIR$/.idea/Spring_framework.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring-08-SpringBoot-MVC-Controller/cybertek.iml" filepath="$PROJECT_DIR$/Spring-08-SpringBoot-MVC-Controller/cybertek.iml" />

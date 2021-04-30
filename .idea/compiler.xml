@@ -27,6 +27,7 @@
         <module name="Spring-09-ORM-MApping-ONE-to-One" />
         <module name="Spring-09-ORM-DrivedQueries" />
         <module name="Spring-09-ORM-CinemaLab" />
+        <module name="Spring-11-Rest-HTTP-Api-creatiaon-Preferred" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -51,6 +52,7 @@
       <module name="Spring-10-SecurityDefaultConfiguration" target="11" />
       <module name="Spring-10-SecurityHTTPBasic-AuthorizationRoleBAse" target="11" />
       <module name="Spring-10-Secutity-HttpBasic-DataBase" target="11" />
+      <module name="Spring-11-Rest-HTTP-Api-creatiaon-Preferred" target="11" />
       <module name="Spring-11-Rest-Http-Legacy" target="11" />
     </bytecodeTargetLevel>
   </component>
@@ -70,6 +72,7 @@
       <module name="Spring-10-SecurityDefaultConfiguration" options="-parameters" />
       <module name="Spring-10-SecurityHTTPBasic-AuthorizationRoleBAse" options="-parameters" />
       <module name="Spring-10-Secutity-HttpBasic-DataBase" options="-parameters" />
+      <module name="Spring-11-Rest-HTTP-Api-creatiaon-Preferred" options="-parameters" />
       <module name="Spring-11-Rest-Http-Legacy" options="-parameters" />
       <module name="cybertek" options="-parameters" />
       <module name="cybertek (1)" options="-parameters" />
