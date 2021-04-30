@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Spring-08-SpringBoot-MVC-Form" />
+        <module name="Spring-11-Rest-ResponseEntity" />
         <module name="Spring-09-ORM-TableCreation" />
         <module name="Spring-11-Rest-Http-Legacy" />
         <module name="Spring-09-ORM-Mapping-ManyToMAny" />
@@ -54,6 +55,7 @@
       <module name="Spring-10-Secutity-HttpBasic-DataBase" target="11" />
       <module name="Spring-11-Rest-HTTP-Api-creatiaon-Preferred" target="11" />
       <module name="Spring-11-Rest-Http-Legacy" target="11" />
+      <module name="Spring-11-Rest-ResponseEntity" target="11" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -74,6 +76,7 @@
       <module name="Spring-10-Secutity-HttpBasic-DataBase" options="-parameters" />
       <module name="Spring-11-Rest-HTTP-Api-creatiaon-Preferred" options="-parameters" />
       <module name="Spring-11-Rest-Http-Legacy" options="-parameters" />
+      <module name="Spring-11-Rest-ResponseEntity" options="-parameters" />
       <module name="cybertek" options="-parameters" />
       <module name="cybertek (1)" options="-parameters" />
       <module name="orm3" options="-parameters" />
