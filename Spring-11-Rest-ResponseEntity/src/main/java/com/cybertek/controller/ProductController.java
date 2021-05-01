@@ -97,6 +97,12 @@ public class ProductController {
         return ResponseEntity.ok(new ResponseWrapper("product is deleted ",productService.delete(id)));
     }
 
+    // different option
+    @DeleteMapping("/delete2/{id}")
+    public ResponseEntity<ResponseWrapper> deleteProduct3(@PathVariable("id") long id){
+        return ResponseEntity.status(HttpStatus.ACCEPTED).body(new ResponseWrapper("product successfully deleted"));
+    }
+
 }
 
 
