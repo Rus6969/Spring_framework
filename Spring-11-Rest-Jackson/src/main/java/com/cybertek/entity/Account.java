@@ -1,10 +1,15 @@
 package com.cybertek.entity;
 
-import cinemaLab.enums.UserRole;
+import com.cybertek.enums.UserRole;
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
+
+import javax.persistence.*;
 
 @Entity
 @Getter
@@ -12,6 +17,8 @@ import lombok.ToString;
 @NoArgsConstructor
 @Table(name = "account_details")
 @ToString
+//class level when we run AIP in Json will see all fieled with values names address etc if I do not show information in payload, ignore unkown if someone wants catch hack api , it wll ignore unkonws
+@JsonIgnoreProperties(value = {"state","postalCode"},ignoreUnknown = true)
 public class Account extends BaseEntity {
 
     private String name;
@@ -20,13 +27,15 @@ public class Account extends BaseEntity {
     private String state;
     private String city;
     private Integer age;
-
+    @Column(name = "postal_code")
     private String postalCode;
 
     @Enumerated(EnumType.STRING)
     private UserRole role = UserRole.USER;
 
     @OneToOne(mappedBy = "account")
+    //when we call account api localhost8080/api/accounts we want to see user in this payload
+    @JsonBackReference
     private User user;
 
 
