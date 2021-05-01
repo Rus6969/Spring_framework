@@ -91,6 +91,12 @@ public class ProductController {
                 .ok(new ResponseWrapper("products successfully retrieved",productService.getProducts()));
     }
 
+
+    @DeleteMapping("delete/{id}")
+    public ResponseEntity<ResponseWrapper>deleteProduct2(@PathVariable("id") Long id){
+        return ResponseEntity.ok(new ResponseWrapper("product is deleted ",productService.delete(id)));
+    }
+
 }
 
 
