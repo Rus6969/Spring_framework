@@ -47,9 +47,6 @@ public class ProductController {
                 .body(productService.getProducts());
     }
 
-
-
-
     @DeleteMapping(value = "{id}")
     public  ResponseEntity<List<Product>> deleteProduct(@PathVariable("id") Long id) {
         HttpHeaders responseHttpHeaders = new HttpHeaders();
@@ -100,7 +97,7 @@ public class ProductController {
     // different option
     @DeleteMapping("/delete2/{id}")
     public ResponseEntity<ResponseWrapper> deleteProduct3(@PathVariable("id") long id){
-        return ResponseEntity.status(HttpStatus.ACCEPTED).body(new ResponseWrapper("product successfully deleted"));
+        return ResponseEntity.status(HttpStatus.OK).body(new ResponseWrapper("product successfully deleted"));
     }
 
 }
