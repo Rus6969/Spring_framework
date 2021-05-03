@@ -8,29 +8,30 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Spring-08-SpringBoot-MVC-Form" />
-        <module name="Spring-11-Rest-ResponseEntity" />
         <module name="Spring-09-ORM-TableCreation" />
         <module name="Spring-11-Rest-Http-Legacy" />
         <module name="Spring-09-ORM-Mapping-ManyToMAny" />
         <module name="cybertek" />
+        <module name="cybertek (1)" />
+        <module name="Spring-11-Rest-ScholLab" />
+        <module name="Spring-10-Secutity-HttpBasic-DataBase" />
+        <module name="Spring-01-SpringContainer" />
+        <module name="Spring-11-Rest-Jackson" />
+        <module name="Spring-02-DI-ConstructorInjection" />
+        <module name="Spring-09-ORM-MApping-ONE-to-One" />
+        <module name="Spring-09-ORM-CinemaLab" />
+        <module name="Spring-11-Rest-HTTP-Api-creatiaon-Preferred" />
+        <module name="Spring-11-Rest-ResponseEntity" />
         <module name="Spring-09-ORM-OneToMany" />
         <module name="Spring-02-DI-SetterInjection" />
         <module name="Spring-09-ORM-Mapping-JPQL-Namedqueries" />
-        <module name="cybertek (1)" />
         <module name="Spring-11-RestTemplate" />
-        <module name="Spring-10-Secutity-HttpBasic-DataBase" />
-        <module name="Spring-01-SpringContainer" />
         <module name="Spring-09-ORM-ManyToOne" />
         <module name="Spring-10-Security-Form-Auth" />
         <module name="Spring-10-SecurityHTTPBasic-AuthorizationRoleBAse" />
-        <module name="Spring-11-Rest-Jackson" />
         <module name="Spring-10-SecurityDefaultConfiguration" />
         <module name="Spring-10-Security-CustomConfiguration" />
-        <module name="Spring-02-DI-ConstructorInjection" />
-        <module name="Spring-09-ORM-MApping-ONE-to-One" />
         <module name="Spring-09-ORM-DrivedQueries" />
-        <module name="Spring-09-ORM-CinemaLab" />
-        <module name="Spring-11-Rest-HTTP-Api-creatiaon-Preferred" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -59,6 +60,7 @@
       <module name="Spring-11-Rest-Http-Legacy" target="11" />
       <module name="Spring-11-Rest-Jackson" target="11" />
       <module name="Spring-11-Rest-ResponseEntity" target="11" />
+      <module name="Spring-11-Rest-ScholLab" target="11" />
       <module name="Spring-11-RestTemplate" target="11" />
     </bytecodeTargetLevel>
   </component>
