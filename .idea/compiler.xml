@@ -17,6 +17,7 @@
         <module name="Spring-02-DI-SetterInjection" />
         <module name="Spring-09-ORM-Mapping-JPQL-Namedqueries" />
         <module name="cybertek (1)" />
+        <module name="Spring-11-RestTemplate" />
         <module name="Spring-10-Secutity-HttpBasic-DataBase" />
         <module name="Spring-01-SpringContainer" />
         <module name="Spring-09-ORM-ManyToOne" />
@@ -58,6 +59,7 @@
       <module name="Spring-11-Rest-Http-Legacy" target="11" />
       <module name="Spring-11-Rest-Jackson" target="11" />
       <module name="Spring-11-Rest-ResponseEntity" target="11" />
+      <module name="Spring-11-RestTemplate" target="11" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -80,6 +82,7 @@
       <module name="Spring-11-Rest-Http-Legacy" options="-parameters" />
       <module name="Spring-11-Rest-Jackson" options="-parameters" />
       <module name="Spring-11-Rest-ResponseEntity" options="-parameters" />
+      <module name="Spring-11-RestTemplate" options="-parameters" />
       <module name="cybertek" options="-parameters" />
       <module name="cybertek (1)" options="-parameters" />
       <module name="orm3" options="-parameters" />

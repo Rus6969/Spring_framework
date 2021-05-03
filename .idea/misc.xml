@@ -27,6 +27,7 @@
         <option value="$PROJECT_DIR$/Spring-11-Rest-HTTP-Api-creatiaon-Preferred/pom.xml" />
         <option value="$PROJECT_DIR$/Spring-11-Rest-ResponseEntity/pom.xml" />
         <option value="$PROJECT_DIR$/Spring-11-Rest-Jackson/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring-11-RestTemplate/pom.xml" />
       </list>
     </option>
   </component>

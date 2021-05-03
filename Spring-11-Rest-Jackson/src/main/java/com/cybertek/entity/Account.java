@@ -10,7 +10,6 @@ import lombok.Setter;
 import lombok.ToString;
 
 import javax.persistence.*;
-
 @Entity
 @Getter
 @Setter
@@ -34,7 +33,8 @@ public class Account extends BaseEntity {
     private UserRole role = UserRole.USER;
 
     @OneToOne(mappedBy = "account")
-    //when we call account api localhost8080/api/accounts we want to see user in this payload
+    //In a Account api I do not want see any info related to User similar to @Jsonignore,  in serialization it will give san me output but in desirialization
+    // wvalue will not be null it will pickup reference data
     @JsonBackReference
     private User user;
 

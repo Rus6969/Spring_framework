@@ -1,6 +1,6 @@
 package com.cybertek.repository;
 
-import cinemaLab.entity.MovieCinema;
+import com.cybertek.entity.MovieCinema;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
@@ -10,8 +10,7 @@ import java.util.List;
 import java.util.Optional;
 
 @Repository
-public interface MovieCinemaRepository extends JpaRepository<MovieCinema, Long> {
-
+public interface MovieCinemaRepository extends JpaRepository<MovieCinema,Long> {
 
     // ------------------- DERIVED QUERIES ------------------- //
 
