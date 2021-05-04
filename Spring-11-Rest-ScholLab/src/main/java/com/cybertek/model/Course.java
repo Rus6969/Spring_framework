@@ -22,4 +22,7 @@ import javax.persistence.Table;
 public class Course extends BaseEntity {
 
     private String name;
+    //unlimineted amont od charecters
+    @Column(columnDefinition = "text")
+    private String description;
 }
