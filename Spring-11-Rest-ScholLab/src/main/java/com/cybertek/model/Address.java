@@ -58,7 +58,7 @@ public class Address extends BaseEntity {
         Map<String,Object>getweather = (Map<String,Object>) currentWheather;
         //we are using current here bc current is a key in 3partyapi its comming as a key
         Map<String,Object>getTemperature = (Map<String,Object>) getweather.get("current");
-        //parsing to String since we want return in String
+        //parsing to String since we want return in String, specific value from jsom
         return Integer.parseInt(getTemperature.get("temperature").toString());
 
     }
