@@ -1,4 +1,5 @@
 package com.cybertek.controller;
+
 import com.cybertek.entity.Genre;
 import com.cybertek.entity.MovieCinema;
 import com.cybertek.repository.GenreRepository;
@@ -24,7 +25,7 @@ Mono is a stream which returns zero items or a single item (0..1), whereas Flux 
  */
 @RestController
 public class WebFluxController {
-// baseUrl("http://localhost:8080").build(); api which we are trying to consume ( as an example we consume our api)
+    // baseUrl("http://localhost:8080").build(); api which we are trying to consume ( as an example we consume our api)
     private WebClient webClient = WebClient.builder().baseUrl("http://localhost:8080").build();
 
 
@@ -43,10 +44,39 @@ public class WebFluxController {
 //
 //    }
 
-     // here since repository returns list we need make changes in return statement list is converted to flux structure
+    // here since repository returns list we need make changes in return statement list is converted to flux structure
     @GetMapping("/flux-movie-cinemas")
-    public Flux<MovieCinema> readAllCinemaFlux(){
+    public Flux<MovieCinema> readAllCinemaFlux() {
         return Flux.fromIterable(movieCinemaRepository.findAll());
+    }
+
+    @GetMapping("/mono-movie-cinema/{id}")
+    public Mono<MovieCinema> readyById(@PathVariable("id") Long id) {
+        return Mono.just(movieCinemaRepository.findById(id).get());
+    }
+
+    @GetMapping("/mono-movie-cinema")
+    public Mono<MovieCinema> readByIdRequestParam(@RequestParam("id") Long id) {
+        return Mono.just(movieCinemaRepository.findById(id).get());
+    }
+
+    @PostMapping("create-genre")
+    public Mono<Genre> createGenre(@RequestBody Genre genre) {
+        Genre createdgenre = genreRepository.save(genre);
+        return Mono.just(createdgenre);
+        //      return Mono.just(genreRepository.save(genre));
+    }
+
+    @PutMapping("/update-genre")
+    public Mono<Genre> updatedGenre(@RequestBody Genre genre){
+        Genre updatedGenre= genreRepository.save(genre);
+        return Mono.just(updatedGenre);
+    }
+
+    @DeleteMapping("/delete-genre/{id}")
+    public Mono<Void> deleteGenre(@PathVariable("id") Long id){
+        genreRepository.deleteById(id);
+        return Mono.empty();
     }
 
 }
