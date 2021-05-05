@@ -45,7 +45,7 @@ public class ProductController {
     @RequestMapping(value = "/products/{id}", method = RequestMethod.PUT)
     // RequestBody) we need when we want post something
     public @ResponseBody
-    List<Product> Updateroduct(@PathVariable("id") Long id, @RequestBody Product product) {
+    List<Product> UpdateProduct(@PathVariable("id") Long id, @RequestBody Product product) {
         return productService.createProduct(product);
     }
 
