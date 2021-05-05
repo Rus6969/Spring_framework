@@ -1,6 +1,18 @@
 package com.cybertek.controller;
+import com.cybertek.entity.Genre;
+import com.cybertek.entity.MovieCinema;
+import com.cybertek.repository.GenreRepository;
+import com.cybertek.repository.MovieCinemaRepository;
+import com.cybertek.repository.MovieRepository;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.MediaType;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.reactive.function.client.WebClient;
+import reactor.core.publisher.Flux;
+import reactor.core.publisher.Mono;
 
-import org.springframework.web.bind.annotation.RestController;
+import java.util.List;
+
 /*/ must be added first to work with mono and flux
  <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -12,4 +24,29 @@ Mono is a stream which returns zero items or a single item (0..1), whereas Flux 
  */
 @RestController
 public class WebFluxController {
+// baseUrl("http://localhost:8080").build(); api which we are trying to consume ( as an example we consume our api)
+    private WebClient webClient = WebClient.builder().baseUrl("http://localhost:8080").build();
+
+
+    private MovieCinemaRepository movieCinemaRepository;
+    private GenreRepository genreRepository;
+
+    public WebFluxController(MovieCinemaRepository movieCinemaRepository, GenreRepository genreRepository) {
+        this.movieCinemaRepository = movieCinemaRepository;
+        this.genreRepository = genreRepository;
+    }
+
+    //I nreactive Programming if metjod return 0.1 if more than 1 flux
+    // REGULAR
+//    @GetMapping
+//    public List<MovieCinema> readAllCinemasFlux(){
+//
+//    }
+
+     // here since repository returns list we need make changes in return statement list is converted to flux structure
+    @GetMapping("/flux-movie-cinemas")
+    public Flux<MovieCinema> readAllCinemaFlux(){
+        return Flux.fromIterable(movieCinemaRepository.findAll());
+    }
+
 }
