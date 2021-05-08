@@ -25,7 +25,7 @@ Mono is a stream which returns zero items or a single item (0..1), whereas Flux 
  */
 @RestController
 public class WebFluxController {
-    // baseUrl("http://localhost:8080").build(); api which we are trying to consume ( as an example we consume our api)
+    // baseUrl("http://localhost:8080").build(); api which we are trying to consume ( as an example we consume our api)  this instace is for consuming api Webclient
     private WebClient webClient = WebClient.builder().baseUrl("http://localhost:8080").build();
 
 
@@ -60,23 +60,93 @@ public class WebFluxController {
         return Mono.just(movieCinemaRepository.findById(id).get());
     }
 
-    @PostMapping("create-genre")
+    @PostMapping("/create-genre")
     public Mono<Genre> createGenre(@RequestBody Genre genre) {
-        Genre createdgenre = genreRepository.save(genre);
-        return Mono.just(createdgenre);
-        //      return Mono.just(genreRepository.save(genre));
+        Genre createdGenre = genreRepository.save(genre);
+        return Mono.just(createdGenre);
+//      return Mono.just(genreRepository.save(genre));
     }
 
     @PutMapping("/update-genre")
-    public Mono<Genre> updatedGenre(@RequestBody Genre genre){
-        Genre updatedGenre= genreRepository.save(genre);
+    public Mono<Genre> updateGenre(@RequestBody Genre genre) {
+        Genre updatedGenre = genreRepository.save(genre);
         return Mono.just(updatedGenre);
     }
 
     @DeleteMapping("/delete-genre/{id}")
-    public Mono<Void> deleteGenre(@PathVariable("id") Long id){
+    public Mono<Void> deleteGenre(@PathVariable("id") Long id) {
         genreRepository.deleteById(id);
         return Mono.empty();
     }
 
+    //--------------------------- WEBCLIENT EXAMPLE-------------------- here we will consume apis above :
+
+    @GetMapping("/flux")
+    public Flux<MovieCinema> readWithWebClient() {
+        return webClient
+                .get()
+                .uri("/flux-movie-cinemas")
+                .header(HttpHeaders.CONTENT_TYPE, MediaType.APPLICATION_JSON_VALUE)
+                .retrieve()
+                .bodyToFlux(MovieCinema.class);
+    }
+
+    @GetMapping("/mono/{id}")
+    public Mono<MovieCinema> redMonoWithWebClient(@PathVariable("id") Long id) {
+        return webClient
+                .get()
+                .uri("/mono-movie-cinema/{id}", id)
+                .retrieve()
+                .bodyToMono(MovieCinema.class);
+
+    }
+
+    @GetMapping("/mono-rp")
+    public Mono<MovieCinema> readMonoWithWebclientRequestParam(@RequestParam("id") Long id) {
+        return webClient
+                .get()
+                .uri(uriBuilder ->
+                        uriBuilder
+                                .path("/mono-movie-cinema")
+                                .queryParam("id", id)
+                                .build()
+                )
+                .retrieve()
+                .bodyToMono(MovieCinema.class);
+    }
+
+    @PostMapping("/create")
+    public Mono<Genre> creatWithWebClient(@RequestBody Genre genre) {
+        return webClient
+                .post()
+                .uri("/create-genre")
+                .body(Mono.just(genre), Genre.class)
+                .retrieve()
+                .bodyToMono(Genre.class);
+    }
+
+//    @DeleteMapping("/delete/{id}")
+//    public Mono<Void> deleteWebClient(@PathVariable("id") Long id) {
+//        return webClient.delete()
+//                .uri("/delete-genre/{id}", id)
+//                .retrieve()
+//                .bodyToMono(Void.class);
+//    }
+
+
+    @DeleteMapping("/delete/{id}")
+    public Mono<Void> deleteWebClient(@PathVariable("id") Long id) throws Exception {
+
+        Integer countGenres = genreRepository.countGenresNativeQuery(id);
+        if (countGenres > 0) {
+            throw new Exception("Genre can't be deleted, is linked by a movie");
+        }
+
+        return webClient.delete()
+                .uri("/delete-genre/{id}",id)
+                .retrieve()
+                .bodyToMono(Void.class);
+    }
 }
+
+

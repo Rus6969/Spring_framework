@@ -21,6 +21,7 @@
         <module name="Spring-09-ORM-MApping-ONE-to-One" />
         <module name="Spring-09-ORM-CinemaLab" />
         <module name="Spring-11-Rest-HTTP-Api-creatiaon-Preferred" />
+        <module name="Spring-11-Rest-Open-Api3.0" />
         <module name="Spring-11-Rest-ResponseEntity" />
         <module name="Spring-09-ORM-OneToMany" />
         <module name="Spring-02-DI-SetterInjection" />
@@ -59,6 +60,7 @@
       <module name="Spring-11-Rest-HTTP-Api-creatiaon-Preferred" target="11" />
       <module name="Spring-11-Rest-Http-Legacy" target="11" />
       <module name="Spring-11-Rest-Jackson" target="11" />
+      <module name="Spring-11-Rest-Open-Api3.0" target="11" />
       <module name="Spring-11-Rest-ResponseEntity" target="11" />
       <module name="Spring-11-Rest-ScholLab" target="11" />
       <module name="Spring-11-RestTemplate" target="11" />
@@ -83,6 +85,7 @@
       <module name="Spring-11-Rest-HTTP-Api-creatiaon-Preferred" options="-parameters" />
       <module name="Spring-11-Rest-Http-Legacy" options="-parameters" />
       <module name="Spring-11-Rest-Jackson" options="-parameters" />
+      <module name="Spring-11-Rest-Open-Api3.0" options="-parameters" />
       <module name="Spring-11-Rest-ResponseEntity" options="-parameters" />
       <module name="Spring-11-Rest-ScholLab" options="-parameters" />
       <module name="Spring-11-RestTemplate" options="-parameters" />

@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <type id="Spring" />
+  </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
@@ -29,6 +32,7 @@
         <option value="$PROJECT_DIR$/Spring-11-Rest-Jackson/pom.xml" />
         <option value="$PROJECT_DIR$/Spring-11-RestTemplate/pom.xml" />
         <option value="$PROJECT_DIR$/Spring-11-Rest-ScholLab/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring-11-Rest-Open-Api3.0/pom.xml" />
       </list>
     </option>
   </component>
