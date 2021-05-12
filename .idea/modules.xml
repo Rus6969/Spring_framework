@@ -26,6 +26,7 @@
       <module fileurl="file://$PROJECT_DIR$/Spring-11-Rest-Open-Api3.0/Spring-11-Rest-Open-Api3.0.iml" filepath="$PROJECT_DIR$/Spring-11-Rest-Open-Api3.0/Spring-11-Rest-Open-Api3.0.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring-11-Rest-ResponseEntity/Spring-11-Rest-ResponseEntity.iml" filepath="$PROJECT_DIR$/Spring-11-Rest-ResponseEntity/Spring-11-Rest-ResponseEntity.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring-11-Rest-ScholLab/Spring-11-Rest-ScholLab.iml" filepath="$PROJECT_DIR$/Spring-11-Rest-ScholLab/Spring-11-Rest-ScholLab.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring-11-Rest-Security-JWT/Spring-11-Rest-Security-JWT.iml" filepath="$PROJECT_DIR$/Spring-11-Rest-Security-JWT/Spring-11-Rest-Security-JWT.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring-11-RestTemplate/Spring-11-RestTemplate.iml" filepath="$PROJECT_DIR$/Spring-11-RestTemplate/Spring-11-RestTemplate.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Spring_framework.iml" filepath="$PROJECT_DIR$/.idea/Spring_framework.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring-08-SpringBoot-MVC-Controller/cybertek.iml" filepath="$PROJECT_DIR$/Spring-08-SpringBoot-MVC-Controller/cybertek.iml" />
