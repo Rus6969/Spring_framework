@@ -1,4 +1,4 @@
-package com.cybertek.entity.enums;
+package com.cybertek.enums;
 
 public enum UserState {
     PENDING,ACTIVE,SUSPENDED

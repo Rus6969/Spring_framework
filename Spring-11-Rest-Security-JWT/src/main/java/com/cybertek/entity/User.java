@@ -1,7 +1,7 @@
 package com.cybertek.entity;
 
-import com.cybertek.entity.enums.UserRole;
-import com.cybertek.entity.enums.UserState;
+import com.cybertek.enums.UserRole;
+import com.cybertek.enums.UserState;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Getter;
 import lombok.Setter;
