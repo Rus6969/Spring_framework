@@ -16,6 +16,7 @@
         <module name="Spring-11-Rest-ScholLab" />
         <module name="Spring-10-Secutity-HttpBasic-DataBase" />
         <module name="Spring-01-SpringContainer" />
+        <module name="Spring-11-Rest-Security-JWT" />
         <module name="Spring-11-Rest-Jackson" />
         <module name="Spring-02-DI-ConstructorInjection" />
         <module name="Spring-09-ORM-MApping-ONE-to-One" />
@@ -63,6 +64,7 @@
       <module name="Spring-11-Rest-Open-Api3.0" target="11" />
       <module name="Spring-11-Rest-ResponseEntity" target="11" />
       <module name="Spring-11-Rest-ScholLab" target="11" />
+      <module name="Spring-11-Rest-Security-JWT" target="11" />
       <module name="Spring-11-RestTemplate" target="11" />
     </bytecodeTargetLevel>
   </component>
@@ -88,6 +90,7 @@
       <module name="Spring-11-Rest-Open-Api3.0" options="-parameters" />
       <module name="Spring-11-Rest-ResponseEntity" options="-parameters" />
       <module name="Spring-11-Rest-ScholLab" options="-parameters" />
+      <module name="Spring-11-Rest-Security-JWT" options="-parameters" />
       <module name="Spring-11-RestTemplate" options="-parameters" />
       <module name="cybertek" options="-parameters" />
       <module name="cybertek (1)" options="-parameters" />
