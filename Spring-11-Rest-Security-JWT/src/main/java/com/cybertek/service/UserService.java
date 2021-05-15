@@ -10,8 +10,14 @@ import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
 import java.util.List;
+
 @Service
 public class UserService {
+    /*
+    Optional is a container object used to contain not-null objects.
+    Optional object is used to represent null with absent value.
+    This class has various utility methods to facilitate code to handle values as 'available' or 'not available' instead of checking null values.
+     */
 
     private final UserRepository userRepository;
     private final BCryptPasswordEncoder bCryptPasswordEncoder;
@@ -20,6 +26,8 @@ public class UserService {
         this.userRepository = userRepository;
         this.bCryptPasswordEncoder = bCryptPasswordEncoder;
     }
+
+    // we use here orElse bc in repository we used as a return type Optional class we use to cove nullpointer exception or .get() can be used
     public User readByUsername(String username) {
         return userRepository.findByUsername(username).orElse(null);
     }
@@ -29,7 +37,7 @@ public class UserService {
     public List<User> getAll() {
         return userRepository.findAll();
     }
-
+// we use transactional if we create or delete user since we work on different sessions we need use this annotation
     @Transactional
     public User createUser(User user) throws ServiceException {
 
@@ -48,7 +56,7 @@ public class UserService {
         user.setIsDeleted(false);
         return userRepository.save(user);
     }
-
+ // if use data manipulation not select so we have different sessioan as threads delet insert ... so we need asign Transaction it will prevent error
     @Transactional
     public User verifyUser(User user) {
         user.setIsVerified(true);
