@@ -14,17 +14,17 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping("api/v1/users")
+@RequestMapping("/api/v1/users")
 // different authorizations enables pre authorization post authorization
 @EnableGlobalMethodSecurity(prePostEnabled = true)
 public class UserController {
+
     @Autowired
     private UserService userService;
 
     @GetMapping("/read")
     //enable authority for specific user api
     @PreAuthorize("hasAuthority('USER')")
-    // for multiple user roles
 //    @PreAuthorize("hasAnyAuthority('USER','ADMIN')")
     public ResponseEntity<ResponseWrapper> readAll(){
 
@@ -34,4 +34,3 @@ public class UserController {
 
     }
 }
-

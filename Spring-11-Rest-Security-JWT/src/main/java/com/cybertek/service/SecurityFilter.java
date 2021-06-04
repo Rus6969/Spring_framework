@@ -16,7 +16,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-
 @Service
 public class SecurityFilter extends OncePerRequestFilter {
 
@@ -27,9 +26,8 @@ public class SecurityFilter extends OncePerRequestFilter {
         this.jwtUtil = jwtUtil;
         this.securityService = securityService;
     }
-
-    //1. override this method
     @Override
+    //1. override this method
     protected void doFilterInternal(HttpServletRequest httpServletRequest,
                                     HttpServletResponse httpServletResponse,
                                     FilterChain filterChain) throws ServletException, IOException {
@@ -44,7 +42,6 @@ public class SecurityFilter extends OncePerRequestFilter {
         }
         //this method is checking is authorization described for specific user
         if (username != null && SecurityContextHolder.getContext().getAuthentication() == null) {
-            //getting our user details
             UserDetails userDetails = securityService.loadUserByUsername(username);
 
             if (jwtUtil.validateToken(token, userDetails) && checkIfUserIsValid(username)) {
