@@ -45,6 +45,7 @@ public class AuthenticationController {
 //through authentication managerbean  we do authentication since we do not have form we call manager
         // ( its not about token its api between DB)
 
+
         UsernamePasswordAuthenticationToken authenticationToken = new UsernamePasswordAuthenticationToken(username,password);
         authenticationManager.authenticate(authenticationToken);
 
