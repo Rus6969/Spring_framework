@@ -1,5 +1,4 @@
 package com.cybertek.exception;
-
 import com.cybertek.entity.DefaultExceptionMessageDto;
 import com.cybertek.entity.ResponseWrapper;
 import org.springframework.core.Ordered;
@@ -28,8 +27,12 @@ public class ExceptionMessageHandler {
     here we show related which class exception to use in User Service we are throwing custom exception
 
      */
+
+    // this exception was manualy called in USER service class when we create a user(called in userservice class)
     @ExceptionHandler(ServiceException.class)
     public ResponseEntity<ResponseWrapper> serviceException(ServiceException se){
+        // here get message there are 2 options first option Spring has inbuilt message or we can override it.
+        //to override this exception we created an annotation in @DEFAULTExceptionmesage
     String message =se.getMessage();
     return  new ResponseEntity<>(ResponseWrapper.builder()
             .success(false)
@@ -38,8 +41,10 @@ public class ExceptionMessageHandler {
             .build(),HttpStatus.CONFLICT);
     }
 
+    // here we are saying that this exception will be called as soon this exception is met
     @ExceptionHandler(AccessDeniedException.class)
     public ResponseEntity<ResponseWrapper> serviceException(AccessDeniedException se){
+        //which message will be added here . 2 options
         String message =se.getMessage();
         return  new ResponseEntity<>(ResponseWrapper.builder()
                 .success(false)
@@ -47,10 +52,10 @@ public class ExceptionMessageHandler {
                 .message(message)
                 .build(),HttpStatus.CONFLICT);
     }
-
+// GEneric Exception if exception belongs one of the classes , run my exception
     @ExceptionHandler({Exception.class, RuntimeException.class, Throwable.class, BadCredentialsException.class})
     public ResponseEntity<ResponseWrapper> genericException(Throwable e, HandlerMethod handlerMethod) {
-
+        // Spring will take message from annotation
         Optional<DefaultExceptionMessageDto> defaultMessage = getMessageFromAnnotation(handlerMethod.getMethod());
         if (defaultMessage.isPresent() && !ObjectUtils.isEmpty(defaultMessage.get().getMessage())) {
             ResponseWrapper response = ResponseWrapper

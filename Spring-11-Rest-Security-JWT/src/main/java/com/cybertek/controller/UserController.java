@@ -25,7 +25,7 @@ public class UserController {
     @GetMapping("/read")
     //enable authority for specific user api
     @PreAuthorize("hasAuthority('USER')")
-//    @PreAuthorize("hasAnyAuthority('USER','ADMIN')")
+   // @PreAuthorize("hasAnyAuthority('USER','ADMIN')")
     public ResponseEntity<ResponseWrapper> readAll(){
 
         List<User> users = userService.getAll();
