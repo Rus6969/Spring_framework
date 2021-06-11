@@ -55,7 +55,7 @@ public class ExceptionMessageHandler {
 // GEneric Exception if exception belongs one of the classes , run my exception
     @ExceptionHandler({Exception.class, RuntimeException.class, Throwable.class, BadCredentialsException.class})
     public ResponseEntity<ResponseWrapper> genericException(Throwable e, HandlerMethod handlerMethod) {
-        // Spring will take message from annotation
+        // Spring will take message from annotation,if annotation does not exist willl use generic message or message from spring library 71
         Optional<DefaultExceptionMessageDto> defaultMessage = getMessageFromAnnotation(handlerMethod.getMethod());
         if (defaultMessage.isPresent() && !ObjectUtils.isEmpty(defaultMessage.get().getMessage())) {
             ResponseWrapper response = ResponseWrapper
