@@ -90,6 +90,29 @@ public class LoggingAspect {
         logger.info("After Returning(List Result) -> Method : {} - results :{}",joinPoint.getSignature().toShortString(),results);
     }
 
+    //AfterThrowing
+    @Pointcut("@annotation(org.springframework.web.bind.annotation.GetMapping)")
+    public void anyGetPutProductOperations(){}
+
+    @AfterThrowing(pointcut = "anyGetPutProductOperations",throwing = "exception")
+    public void afterthrowingControllerAdvice(JoinPoint joinPoint,RuntimeException exception){
+        logger.info("After Throwing(Send Email to L2 Team) -> Method: {} - Exception : {}",joinPoint.getSignature().toShortString(),exception.getMessage());
+    }
+
+    //after
+    @Pointcut("@annotation(org.springframework.web.bind.annotation.GetMapping)")
+    private void anyGetPutProductOperation2(){}
+
+    @After("anyGetPutProductOperation2()")
+    public void afterControllerAdvice(JoinPoint joinPoint){
+        logger.info("After finally -> Method : {} - results :{}",joinPoint.getSignature().toShortString());
+    }
+
+    @After("anyGetPutProductOperation2()")
+    public void afterControllerAdvice2(JoinPoint joinPoint){
+        logger.info("After finally -> Method : {} - results :{}",joinPoint.getSignature().toShortString());
+    }
+
 
 }
 
