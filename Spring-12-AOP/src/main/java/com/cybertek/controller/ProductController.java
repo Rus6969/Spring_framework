@@ -1,8 +1,10 @@
 package com.cybertek.controller;
-
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import com.cybertek.entity.Product;
 import com.cybertek.entity.ResponseWrapper;
 import com.cybertek.service.ProductService;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
@@ -13,6 +15,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+
 // here different ways of creation headers :::
 // equal controller = responsebody
 @RestController
@@ -22,29 +25,34 @@ public class ProductController {
     @Autowired
     private ProductService productService;
 
+    Logger logger = LoggerFactory.getLogger(ProductController.class);
 
-    @GetMapping(value = "{id}")
-    public ResponseEntity<Product> getProduct(@PathVariable("id") Long id) {
-      // here example where we do not want  pass headers instead directly pass a boddy
-        return ResponseEntity.ok(productService.getProduct(id));
+
+    //    @GetMapping(value = "/{id}")
+//    public ResponseEntity<Product> getProduct(@PathVariable("id") long id){
+//        return ResponseEntity.ok(productService.getProduct(id));
+//    }
+
+    @GetMapping(value = "/{id}")
+    public Product getProduct(@PathVariable("id") long id){
+        return productService.getProduct(id);
     }
+
 
 
     // default is get so we do not need to add it
+
     @GetMapping
-    //here we changed return type bc line 44 returns Response entity not a list
-    public ResponseEntity<List<Product>> findAllProducts() {
-        HttpHeaders responseHttpHeaders = new HttpHeaders();
-        responseHttpHeaders.set("Version","Cybertek.v1");
-        responseHttpHeaders.set("Operation","Get List");
-       /* when we use response entity we need provide 3 things response body , status and header:
-         .ok means 200
-        */
-        return ResponseEntity
-                .ok()
-                .headers(responseHttpHeaders)
-                .body(productService.getProducts());
+    public  List<Product> getProducts(){
+
+     //   logger.info("Before -> Controller:{} - Method:{} - Input Parameter:{}", "ProductController ", "getProducts()");
+        List<Product> list = productService.getProducts();
+       // logger.info("After -> Controller:{} - Method:{} - Output Parameter:{}", "ProductController ", "getProducts()",list.toString());
+
+        return list;
+//        return list;
     }
+
 
     @DeleteMapping(value = "{id}")
     public  ResponseEntity<List<Product>> deleteProduct(@PathVariable("id") Long id) {

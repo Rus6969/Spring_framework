@@ -12,8 +12,11 @@ import java.util.List;
 @Service
 public class ProductServiceImpl implements ProductService {
 
-    @Autowired
     private ProductRepository productRepository;
+
+    public ProductServiceImpl(ProductRepository productRepository) {
+        this.productRepository = productRepository;
+    }
 
     @Override
     public List<Product> getProducts() {
@@ -28,7 +31,6 @@ public class ProductServiceImpl implements ProductService {
 
     @Override
     public List<Product> updateProduct(long id, Product product) {
-        // we are using get because it returns Optional class
         Product obj = productRepository.findById(id).get();
         obj.setName(product.getName());
         productRepository.save(obj);
@@ -43,6 +45,7 @@ public class ProductServiceImpl implements ProductService {
 
     @Override
     public Product getProduct(long id) {
+
         return productRepository.findById(id).get();
     }
 }
