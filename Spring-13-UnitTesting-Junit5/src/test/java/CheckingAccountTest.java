@@ -30,6 +30,8 @@ class CheckingAccountTest {
 
     @Test
     void withdraw_branch(){
+
+        // accepts 2 parameters which exception expect, second executable statemet get actual result ( run bussines logic using lambda)
         assertThrows(IllegalArgumentException.class,() ->{
             checkingAccount.withdraw_branch(600,false);
         });
