@@ -35,6 +35,7 @@ class CalculatorTest {
     void testCase2(){
         System.out.println("TC2 executed");
         assertTrue(Calculator.operator.equals("add"));
+
     }
 
     @Test
