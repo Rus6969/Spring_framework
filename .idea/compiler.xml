@@ -32,6 +32,7 @@
         <module name="Spring-09-ORM-ManyToOne" />
         <module name="Spring-10-Security-Form-Auth" />
         <module name="Spring-10-SecurityHTTPBasic-AuthorizationRoleBAse" />
+        <module name="Spring-13-UnitTesting-Junit5" />
         <module name="Spring-10-SecurityDefaultConfiguration" />
         <module name="Spring-10-Security-CustomConfiguration" />
         <module name="Spring-09-ORM-DrivedQueries" />
@@ -68,6 +69,7 @@
       <module name="Spring-11-Rest-Security-JWT" target="11" />
       <module name="Spring-11-RestTemplate" target="11" />
       <module name="Spring-12-AOP" target="11" />
+      <module name="Spring-13-UnitTesting-Junit5" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
