@@ -32,12 +32,12 @@ public class ProductController {
         return productService.delete(id);
     }
 
-    //add product :
-    @PostMapping
-    // RequestBody) we need when we want post something
-    public List<Product> creatProduct(@RequestBody Product product) {
-        return productService.createProduct(product);
-    }
+//    //add product :
+//    @PostMapping
+//    // RequestBody) we need when we want post something
+//    public List<Product> creatProduct(@RequestBody Product product) {
+//        return productService.ceateProduct(product);
+//    }
 
     //update product
     @PutMapping(value = "{id}")
