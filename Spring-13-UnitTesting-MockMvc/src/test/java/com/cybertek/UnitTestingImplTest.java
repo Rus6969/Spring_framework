@@ -6,11 +6,9 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
-import java.util.Arrays;
-
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.ArgumentMatchers.anyInt;
-import static org.mockito.Mockito.when;
+import static org.mockito.Mockito.*;
 @ExtendWith(MockitoExtension.class)
 class UnitTestingImplTest {
     @Mock
@@ -51,7 +49,11 @@ void calculateSumUsingDataService_Mock(){
 void calculateSumUsingServiceMock_with_parameters(){
         when(dataRepository.findById(anyInt())).thenReturn(new int[]{10,10,10});
         int actual = unitTesting.calculateSumUsingDataService_withParameter();
-        assertEquals(30,actual);
+        assertEquals(30,actual);// those veryfy methods need to covere tested method
+       // call another method where we need pass sum method(sum)
+       // we can check were datarepository executed
+       verify(dataRepository).findById(2);
+       verify(dataRepository,times(2)).findById(2);
 }
 
     }
