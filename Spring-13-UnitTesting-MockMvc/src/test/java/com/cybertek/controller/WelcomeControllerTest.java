@@ -25,7 +25,7 @@ class WelcomeControllerTest {
         // call welcome endpoint and verify output
         //1.building a request @getmapping endpoint welcome
         RequestBuilder requestBuilder= MockMvcRequestBuilders.get("/welcome").accept(MediaType.APPLICATION_JSON);
-         // 2. triggering endpoit which we created and saving expecting resilt
+         // 2. triggering endpoit which we created and saving expecting result
         MvcResult result = mockMvc.perform(requestBuilder).andReturn();
         assertEquals("welcome",result.getResponse().getContentAsString());
     }
