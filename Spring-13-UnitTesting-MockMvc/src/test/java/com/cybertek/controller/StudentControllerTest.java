@@ -63,13 +63,14 @@ class StudentControllerTest {
     // this option we will mocking data layer
     @Test
     void getStudent_data() throws Exception {
-
+     //   simulating db data in a fact studentservice is not triggered
         when(studentService.getStudent_data()).thenReturn(Arrays.asList(
                 new Student("ozzy","can",20),
                 new Student("tom","hanks",50)
         ));
-
+        // here we go to controller but we are not returning data from db we mock it look above
         mockMvc.perform(MockMvcRequestBuilders.get("/data").accept(MediaType.APPLICATION_JSON))
+                // here we are doing verification
                 .andExpect(status().isOk())
                 .andExpect(content().json("[{\"id\":0,\"firstName\":\"ozzy\",\"lastName\":\"can\",\"age\":20},{\"id\":0,\"firstName\":\"tom\",\"lastName\":\"hanks\",\"age\":50}]"))
                 .andReturn();
