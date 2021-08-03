@@ -31,14 +31,36 @@ class StudentControllerTest {
     @MockBean
     StudentService studentService;
 
-// here we are
+// here we are hard coded not using mock server
      @Test
      void get_Student_data() throws Exception {
          // create mock mvc (create mock endpoint and hit it
          mockMvc.perform(MockMvcRequestBuilders.get("/student").accept(MediaType.APPLICATION_JSON))
+                  // now after we hit an endpoint we are expecting get this response below
                  .andExpect(content().json("{\"id\": 0,\"firstName\": \"Mike\",\"lastName\": \"Smith\",\"age\": 20}"))
                  .andReturn();
      }
+ // BELOW 2 ways of asserting Json :
+ //it's accepting 3 parameters expected actual and false true means strict means check all atributes similar contains method
+    @Test
+    void jsonAssert() throws JSONException {
+
+        String actual = "{\"id\": 0,\"firstName\": \"Mike\",\"lastName\": \"Smith\",\"age\": 20}";
+        String expected = "{\"id\": 0,\"firstName\": \"Mike\",\"lastName\": \"Smith\"}";
+
+        JSONAssert.assertEquals(expected,actual,false);
+    }
+
+    @Test
+    void jsonAssert_withoutEscapeCharacters() throws JSONException {
+
+        String actual = "{id: 0,firstName:Mike,lastName:Smith,age:20}";
+        String expected = "{id:0,firstName:Mike,lastName:Smith}";
+
+        JSONAssert.assertEquals(expected,actual,false);
+    }
+
+    // this option we will mocking data layer
 
 
 }

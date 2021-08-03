@@ -13,7 +13,7 @@ public class StudentController {
     public StudentController(StudentService studentService) {
         this.studentService = studentService;
     }
- //hard coded option
+ //hard coded option we are not using mock here
     @GetMapping("/student")
     Student getStudent_service(){
         Student student = new Student("Mike","Smith",20);
