@@ -7,45 +7,93 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Spring-12-AOP" />
-        <module name="Spring-08-SpringBoot-MVC-Form" />
+        <module name="aop" />
         <module name="Spring-09-ORM-TableCreation" />
-        <module name="Spring-11-Rest-Http-Legacy" />
-        <module name="Spring-09-ORM-Mapping-ManyToMAny" />
-        <module name="cybertek" />
+        <module name="mockmvc" />
         <module name="cybertek (1)" />
-        <module name="Spring-11-Rest-ScholLab" />
+        <module name="rest1 (1)" />
         <module name="Spring-10-Secutity-HttpBasic-DataBase" />
         <module name="Spring-01-SpringContainer" />
         <module name="Spring-11-Rest-Security-JWT" />
+        <module name="ormconfig" />
         <module name="Spring-11-Rest-Jackson" />
         <module name="Spring-13-UnitTesting-MockMvc" />
-        <module name="Spring-02-DI-ConstructorInjection" />
+        <module name="securitydb (1)" />
         <module name="Spring-09-ORM-MApping-ONE-to-One" />
         <module name="Spring-09-ORM-CinemaLab" />
+        <module name="openapi" />
+        <module name="Spring-09-ORM-OneToMany" />
+        <module name="Spring-02-DI-SetterInjection" />
+        <module name="cybertek (2)" />
+        <module name="resttemplate (1)" />
+        <module name="Spring-10-Security-Form-Auth" />
+        <module name="ormonetomany" />
+        <module name="cybertek (3)" />
+        <module name="Spring-10-SecurityHTTPBasic-AuthorizationRoleBAse" />
+        <module name="Spring-13-UnitTesting-Junit5" />
+        <module name="securitydb (2)" />
+        <module name="Spring-10-SecurityDefaultConfiguration" />
+        <module name="Spring-10-Security-CustomConfiguration" />
+        <module name="orm2" />
+        <module name="orm3" />
+        <module name="Spring-09-ORM-DrivedQueries" />
+        <module name="Spring-12-AOP" />
+        <module name="Spring-08-SpringBoot-MVC-Form" />
+        <module name="Spring-11-Rest-Http-Legacy" />
+        <module name="Spring-09-ORM-Mapping-ManyToMAny" />
+        <module name="jwt" />
+        <module name="cybertek" />
+        <module name="rest1 (3)" />
+        <module name="resttemplate (2)" />
+        <module name="security1" />
+        <module name="Spring-11-Rest-ScholLab" />
+        <module name="jpql" />
+        <module name="jackson" />
+        <module name="security2 (2)" />
+        <module name="drivequeries" />
+        <module name="cinemaapp" />
+        <module name="Spring-02-DI-ConstructorInjection" />
         <module name="Spring-11-Rest-HTTP-Api-creatiaon-Preferred" />
         <module name="Spring-11-Rest-Open-Api3.0" />
         <module name="Spring-11-Rest-ResponseEntity" />
-        <module name="Spring-09-ORM-OneToMany" />
-        <module name="Spring-02-DI-SetterInjection" />
         <module name="Spring-09-ORM-Mapping-JPQL-Namedqueries" />
         <module name="Spring-11-RestTemplate" />
+        <module name="rest1 (2)" />
         <module name="Spring-09-ORM-ManyToOne" />
-        <module name="Spring-10-Security-Form-Auth" />
         <module name="SpringMVC-ProjectManagement" />
         <module name="Spring-13-UnitTesting-Mockito" />
-        <module name="Spring-10-SecurityHTTPBasic-AuthorizationRoleBAse" />
-        <module name="Spring-13-UnitTesting-Junit5" />
-        <module name="Spring-10-SecurityDefaultConfiguration" />
-        <module name="Spring-10-Security-CustomConfiguration" />
-        <module name="Spring-09-ORM-DrivedQueries" />
+        <module name="security2 (1)" />
+        <module name="manytomany" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="aop" target="11" />
+      <module name="cinemaapp" target="11" />
       <module name="cybertek" target="11" />
       <module name="cybertek (1)" target="11" />
+      <module name="cybertek (2)" target="11" />
+      <module name="cybertek (3)" target="11" />
+      <module name="drivequeries" target="11" />
+      <module name="jackson" target="11" />
+      <module name="jpql" target="11" />
+      <module name="jwt" target="11" />
+      <module name="manytomany" target="11" />
+      <module name="mockmvc" target="11" />
+      <module name="openapi" target="11" />
+      <module name="orm2" target="11" />
       <module name="orm3" target="11" />
+      <module name="ormconfig" target="11" />
+      <module name="ormonetomany" target="11" />
+      <module name="rest1 (1)" target="11" />
+      <module name="rest1 (2)" target="11" />
+      <module name="rest1 (3)" target="11" />
+      <module name="resttemplate (1)" target="11" />
+      <module name="resttemplate (2)" target="11" />
       <module name="security1" target="11" />
+      <module name="security2 (1)" target="11" />
+      <module name="security2 (2)" target="11" />
+      <module name="securitydb (1)" target="11" />
+      <module name="securitydb (2)" target="11" />
       <module name="Spring-01-SpringContainer" target="1.8" />
       <module name="Spring-02-DI-ConstructorInjection" target="1.8" />
       <module name="Spring-02-DI-SetterInjection" target="1.8" />
@@ -105,10 +153,33 @@
       <module name="Spring-12-AOP" options="-parameters" />
       <module name="Spring-13-UnitTesting-MockMvc" options="-parameters" />
       <module name="SpringMVC-ProjectManagement" options="-parameters" />
+      <module name="aop" options="-parameters" />
+      <module name="cinemaapp" options="-parameters" />
       <module name="cybertek" options="-parameters" />
       <module name="cybertek (1)" options="-parameters" />
+      <module name="cybertek (2)" options="-parameters" />
+      <module name="cybertek (3)" options="-parameters" />
+      <module name="drivequeries" options="-parameters" />
+      <module name="jackson" options="-parameters" />
+      <module name="jpql" options="-parameters" />
+      <module name="jwt" options="-parameters" />
+      <module name="manytomany" options="-parameters" />
+      <module name="mockmvc" options="-parameters" />
+      <module name="openapi" options="-parameters" />
+      <module name="orm2" options="-parameters" />
       <module name="orm3" options="-parameters" />
+      <module name="ormconfig" options="-parameters" />
+      <module name="ormonetomany" options="-parameters" />
+      <module name="rest1 (1)" options="-parameters" />
+      <module name="rest1 (2)" options="-parameters" />
+      <module name="rest1 (3)" options="-parameters" />
+      <module name="resttemplate (1)" options="-parameters" />
+      <module name="resttemplate (2)" options="-parameters" />
       <module name="security1" options="-parameters" />
+      <module name="security2 (1)" options="-parameters" />
+      <module name="security2 (2)" options="-parameters" />
+      <module name="securitydb (1)" options="-parameters" />
+      <module name="securitydb (2)" options="-parameters" />
     </option>
   </component>
 </project>
