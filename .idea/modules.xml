@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../Spring-00-LooselyCoupled/Spring-00-LooselyCoupled.iml" filepath="$PROJECT_DIR$/../Spring-00-LooselyCoupled/Spring-00-LooselyCoupled.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring-01-SpringContainer/Spring-01-SpringContainer.iml" filepath="$PROJECT_DIR$/Spring-01-SpringContainer/Spring-01-SpringContainer.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring-02-DI-ConsttructorInjection/Spring-02-DI-ConstructorInjection.iml" filepath="$PROJECT_DIR$/Spring-02-DI-ConsttructorInjection/Spring-02-DI-ConstructorInjection.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring-02-DI-SetterInjection/Spring-02-DI-SetterInjection.iml" filepath="$PROJECT_DIR$/Spring-02-DI-SetterInjection/Spring-02-DI-SetterInjection.iml" />
@@ -31,10 +32,36 @@
       <module fileurl="file://$PROJECT_DIR$/Spring-12-AOP/Spring-12-AOP.iml" filepath="$PROJECT_DIR$/Spring-12-AOP/Spring-12-AOP.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring-13-UnitTesting-Junit5/Spring-13-UnitTesting-Junit5.iml" filepath="$PROJECT_DIR$/Spring-13-UnitTesting-Junit5/Spring-13-UnitTesting-Junit5.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring-13-UnitTesting-MockMvc/Spring-13-UnitTesting-MockMvc.iml" filepath="$PROJECT_DIR$/Spring-13-UnitTesting-MockMvc/Spring-13-UnitTesting-MockMvc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Spring-LooselyCoupled/Spring-LooselyCoupled.iml" filepath="$PROJECT_DIR$/../Spring-LooselyCoupled/Spring-LooselyCoupled.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring-13-UnitTesting-Mockito/SpringMVC-ProjectManagement.iml" filepath="$PROJECT_DIR$/Spring-13-UnitTesting-Mockito/SpringMVC-ProjectManagement.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Spring_framework.iml" filepath="$PROJECT_DIR$/.idea/Spring_framework.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring-12-AOP/aop.iml" filepath="$PROJECT_DIR$/Spring-12-AOP/aop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring-11-Rest-Open-Api3.0/cinemaapp.iml" filepath="$PROJECT_DIR$/Spring-11-Rest-Open-Api3.0/cinemaapp.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring-08-SpringBoot-MVC-Controller/cybertek.iml" filepath="$PROJECT_DIR$/Spring-08-SpringBoot-MVC-Controller/cybertek.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Spring-08-SpringBoot-MVC-Model-View(Thymeleaf)/cybertek (1).iml" filepath="$PROJECT_DIR$/Spring-08-SpringBoot-MVC-Model-View(Thymeleaf)/cybertek (1).iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring-08-SpringBoot-MVC-Controller/cybertek (1).iml" filepath="$PROJECT_DIR$/Spring-08-SpringBoot-MVC-Controller/cybertek (1).iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring-08-SpringBoot-MVC-Model-View(Thymeleaf)/cybertek (2).iml" filepath="$PROJECT_DIR$/Spring-08-SpringBoot-MVC-Model-View(Thymeleaf)/cybertek (2).iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringBoot-MVC-Form/cybertek (3).iml" filepath="$PROJECT_DIR$/SpringBoot-MVC-Form/cybertek (3).iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring-09-ORM-DrivedQueries/drivequeries.iml" filepath="$PROJECT_DIR$/Spring-09-ORM-DrivedQueries/drivequeries.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring-11-Rest-Jackson/jackson.iml" filepath="$PROJECT_DIR$/Spring-11-Rest-Jackson/jackson.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring-09-ORM-Mapping-JPQL-Namedqueries/jpql.iml" filepath="$PROJECT_DIR$/Spring-09-ORM-Mapping-JPQL-Namedqueries/jpql.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring-11-Rest-Security-JWT/jwt.iml" filepath="$PROJECT_DIR$/Spring-11-Rest-Security-JWT/jwt.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring-09-ORM-Mapping-ManyToMAny/manytomany.iml" filepath="$PROJECT_DIR$/Spring-09-ORM-Mapping-ManyToMAny/manytomany.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring-13-UnitTesting-MockMvc/mockmvc.iml" filepath="$PROJECT_DIR$/Spring-13-UnitTesting-MockMvc/mockmvc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring-09-ORM-CinemaLab/openapi.iml" filepath="$PROJECT_DIR$/Spring-09-ORM-CinemaLab/openapi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring-09-ORM-MApping-ONE-to-One/orm2.iml" filepath="$PROJECT_DIR$/Spring-09-ORM-MApping-ONE-to-One/orm2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring-09-ORM-ManyToOne/orm3.iml" filepath="$PROJECT_DIR$/Spring-09-ORM-ManyToOne/orm3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring-09-ORM-TableCreation/ormconfig.iml" filepath="$PROJECT_DIR$/Spring-09-ORM-TableCreation/ormconfig.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring-09-ORM-OneToMany/ormonetomany.iml" filepath="$PROJECT_DIR$/Spring-09-ORM-OneToMany/ormonetomany.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring-11-Rest-HTTP-Api-creatiaon-Preferred/rest1 (1).iml" filepath="$PROJECT_DIR$/Spring-11-Rest-HTTP-Api-creatiaon-Preferred/rest1 (1).iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring-11-Rest-Http-Legacy/rest1 (2).iml" filepath="$PROJECT_DIR$/Spring-11-Rest-Http-Legacy/rest1 (2).iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring-11-Rest-ResponseEntity/rest1 (3).iml" filepath="$PROJECT_DIR$/Spring-11-Rest-ResponseEntity/rest1 (3).iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring-11-Rest-ScholLab/resttemplate (1).iml" filepath="$PROJECT_DIR$/Spring-11-Rest-ScholLab/resttemplate (1).iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring-11-RestTemplate/resttemplate (2).iml" filepath="$PROJECT_DIR$/Spring-11-RestTemplate/resttemplate (2).iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring-10-SecurityDefaultConfiguration/security1.iml" filepath="$PROJECT_DIR$/Spring-10-SecurityDefaultConfiguration/security1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring-10-Security-CustomConfiguration/security2 (1).iml" filepath="$PROJECT_DIR$/Spring-10-Security-CustomConfiguration/security2 (1).iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring-10-SecurityHTTPBasic-AuthorizationRoleBAse/security2 (2).iml" filepath="$PROJECT_DIR$/Spring-10-SecurityHTTPBasic-AuthorizationRoleBAse/security2 (2).iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring-10-Security-Form-Auth/securitydb (1).iml" filepath="$PROJECT_DIR$/Spring-10-Security-Form-Auth/securitydb (1).iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring-10-Secutity-HttpBasic-DataBase/securitydb (2).iml" filepath="$PROJECT_DIR$/Spring-10-Secutity-HttpBasic-DataBase/securitydb (2).iml" />
     </modules>
   </component>
 </project>
