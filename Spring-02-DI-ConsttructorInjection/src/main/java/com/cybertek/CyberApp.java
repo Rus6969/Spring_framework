@@ -7,7 +7,10 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class CyberApp {
     public static void main(String[] args) {
 
-               ApplicationContext container = new ClassPathXmlApplicationContext("config.xml");
-       container.getBean("selenium",Course.class);
+        ApplicationContext container = new ClassPathXmlApplicationContext("config.xml");
+
+        Course course = container.getBean("selenium", Course.class);
+        course.getTeachingHours();
+
     }
 }
