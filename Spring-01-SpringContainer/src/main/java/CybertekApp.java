@@ -5,11 +5,11 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class CybertekApp {
     public static void main(String[] args) {
-        //we need to pass configurartion file in container we have beans , all beans mentioned in xml file
+        //we need to pass configuration file in container we have beans , all beans mentioned in xml file
         // BeanFactory container = new ClassPathXmlApplicationContext("config.xml");
 
 
-        // this clas implemennts BeanFactory , does same thing
+        // this clas implements BeanFactory , does same thing
         ApplicationContext container = new ClassPathXmlApplicationContext("config.xml");
 
 //        Mentor mentor = (Mentor) container.getBean("fullTimeMentor");
