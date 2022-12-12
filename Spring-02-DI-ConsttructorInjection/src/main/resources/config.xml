@@ -8,6 +8,5 @@
         <constructor-arg ref="officeHours"/>
     </bean>
     <bean id="selenium" class="com.cybertek.services.Selenium"></bean>
-
     <bean id="officeHours" class="com.cybertek.services.OfficeHours"></bean>
 </beans>
