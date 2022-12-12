@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
+    <excludeFromCompile>
+      <directory url="file://$PROJECT_DIR$/Spring-03-ScopeSingletonPrototype/src/main/resources/archetype-resources" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/../Spring-05-Annotations/src/main/resources/archetype-resources" includeSubdirectories="true" />
+    </excludeFromCompile>
     <annotationProcessing>
       <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
@@ -12,6 +16,7 @@
         <module name="mockmvc" />
         <module name="cybertek (1)" />
         <module name="rest1 (1)" />
+        <module name="Spring-04-BeanLifeCycle" />
         <module name="Spring-10-Secutity-HttpBasic-DataBase" />
         <module name="Spring-01-SpringContainer" />
         <module name="Spring-11-Rest-Security-JWT" />
@@ -24,6 +29,7 @@
         <module name="openapi" />
         <module name="Spring-09-ORM-OneToMany" />
         <module name="Spring-02-DI-SetterInjection" />
+        <module name="Spring-03-ScopeSingletonPrototype" />
         <module name="cybertek (2)" />
         <module name="resttemplate (1)" />
         <module name="Spring-10-Security-Form-Auth" />
@@ -36,6 +42,7 @@
         <module name="Spring-10-Security-CustomConfiguration" />
         <module name="orm2" />
         <module name="orm3" />
+        <module name="Spring-05-Annotations" />
         <module name="Spring-09-ORM-DrivedQueries" />
         <module name="Spring-12-AOP" />
         <module name="Spring-08-SpringBoot-MVC-Form" />
@@ -67,36 +74,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="aop" target="11" />
-      <module name="cinemaapp" target="11" />
       <module name="cybertek" target="11" />
-      <module name="cybertek (1)" target="11" />
-      <module name="cybertek (2)" target="11" />
-      <module name="cybertek (3)" target="11" />
-      <module name="drivequeries" target="11" />
-      <module name="jackson" target="11" />
-      <module name="jpql" target="11" />
-      <module name="jwt" target="11" />
-      <module name="manytomany" target="11" />
-      <module name="mockmvc" target="11" />
-      <module name="openapi" target="11" />
-      <module name="orm2" target="11" />
-      <module name="orm3" target="11" />
-      <module name="ormconfig" target="11" />
-      <module name="ormonetomany" target="11" />
-      <module name="rest1 (1)" target="11" />
-      <module name="rest1 (2)" target="11" />
-      <module name="rest1 (3)" target="11" />
-      <module name="resttemplate (1)" target="11" />
-      <module name="resttemplate (2)" target="11" />
-      <module name="security1" target="11" />
-      <module name="security2 (1)" target="11" />
-      <module name="security2 (2)" target="11" />
-      <module name="securitydb (1)" target="11" />
-      <module name="securitydb (2)" target="11" />
-      <module name="Spring-01-SpringContainer" target="1.8" />
-      <module name="Spring-02-DI-ConstructorInjection" target="1.8" />
-      <module name="Spring-02-DI-SetterInjection" target="1.8" />
       <module name="Spring-08-SpringBoot-MVC-Form" target="11" />
       <module name="Spring-09-ORM-CinemaLab" target="11" />
       <module name="Spring-09-ORM-DrivedQueries" target="11" />
@@ -120,10 +98,8 @@
       <module name="Spring-11-Rest-Security-JWT" target="11" />
       <module name="Spring-11-RestTemplate" target="11" />
       <module name="Spring-12-AOP" target="11" />
-      <module name="Spring-13-UnitTesting-Junit5" target="1.8" />
       <module name="Spring-13-UnitTesting-Mockito" target="1.5" />
       <module name="Spring-13-UnitTesting-MockMvc" target="11" />
-      <module name="SpringMVC-ProjectManagement" target="11" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
