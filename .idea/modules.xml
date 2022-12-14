@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Spring-00-TightlyCoupled/Spring-00-TightlyCoupled.iml" filepath="$PROJECT_DIR$/Spring-00-TightlyCoupled/Spring-00-TightlyCoupled.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Spring-05-Annotations-Autowired/Spring-05-Annotations-Autowired.iml" filepath="$PROJECT_DIR$/Spring-05-Annotations-Autowired/Spring-05-Annotations-Autowired.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring-05-JavaAnnotations/Spring-05-JavaAnnotations.iml" filepath="$PROJECT_DIR$/Spring-05-JavaAnnotations/Spring-05-JavaAnnotations.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringBoot-MVC-Form/Spring-08-SpringBoot-MVC-Form.iml" filepath="$PROJECT_DIR$/SpringBoot-MVC-Form/Spring-08-SpringBoot-MVC-Form.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring-09-ORM-CinemaLab/Spring-09-ORM-CinemaLab.iml" filepath="$PROJECT_DIR$/Spring-09-ORM-CinemaLab/Spring-09-ORM-CinemaLab.iml" />

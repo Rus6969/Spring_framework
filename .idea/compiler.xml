@@ -26,6 +26,7 @@
         <module name="securitydb (1)" />
         <module name="Spring-09-ORM-MApping-ONE-to-One" />
         <module name="Spring-09-ORM-CinemaLab" />
+        <module name="Spring-05-Annotations-Qualifier" />
         <module name="openapi" />
         <module name="Spring-09-ORM-OneToMany" />
         <module name="Spring-02-DI-SetterInjection" />
@@ -66,10 +67,12 @@
         <module name="Spring-09-ORM-Mapping-JPQL-Namedqueries" />
         <module name="Spring-11-RestTemplate" />
         <module name="rest1 (2)" />
+        <module name="Spring-05-Annotations-Autowired" />
         <module name="Spring-09-ORM-ManyToOne" />
         <module name="SpringMVC-ProjectManagement" />
         <module name="Spring-13-UnitTesting-Mockito" />
         <module name="security2 (1)" />
+        <module name="Spring-05-Value" />
         <module name="manytomany" />
       </profile>
     </annotationProcessing>
