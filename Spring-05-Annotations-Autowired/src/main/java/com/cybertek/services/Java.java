@@ -8,13 +8,16 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class Java implements Course {
+
+    //field ingection
     //@Autowired
     private ExtraSessions officeHours;
-
-    //  @Autowired
-    public Java(OfficeHours officeHours) {
+    /// with constructor injection , if there is 1 constructor no need to put Annotation @Aut0wired
+    @Autowired
+    public Java(ExtraSessions officeHours) {
         this.officeHours = officeHours;
     }
+
     /*
     //Setter Injection
     @Autowired
@@ -26,6 +29,6 @@ public class Java implements Course {
 
     @Override
     public void getTeachingHours() {
-        System.out.println("Weekly java hourse " + (30 + officeHours.getHours()));
+        System.out.println("Weekly java horse " + (30 + officeHours.getHours()));
     }
 }
