@@ -13,6 +13,7 @@ public class Java implements Course {
     private ExtraSessions extraSessions;
 
     public Java(ExtraSessions extraSessions) {
+
         this.extraSessions = extraSessions;
     }
 

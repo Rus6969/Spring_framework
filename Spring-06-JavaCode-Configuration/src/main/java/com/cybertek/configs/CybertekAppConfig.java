@@ -16,6 +16,7 @@ public class CybertekAppConfig {
 
     @Bean
     public Java java() {
+
         return new Java(extraSessions());
     }
 

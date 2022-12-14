@@ -22,6 +22,7 @@
         <module name="Spring-11-Rest-Security-JWT" />
         <module name="ormconfig" />
         <module name="Spring-11-Rest-Jackson" />
+        <module name="Spring-04-BeanLifeCycle (1)" />
         <module name="Spring-13-UnitTesting-MockMvc" />
         <module name="securitydb (1)" />
         <module name="Spring-09-ORM-MApping-ONE-to-One" />
@@ -40,6 +41,7 @@
         <module name="Spring-13-UnitTesting-Junit5" />
         <module name="securitydb (2)" />
         <module name="Spring-10-SecurityDefaultConfiguration" />
+        <module name="Spring-06-JavaCode-PostConstructPredestroy (1)" />
         <module name="Spring-10-Security-CustomConfiguration" />
         <module name="orm2" />
         <module name="orm3" />
@@ -67,6 +69,7 @@
         <module name="Spring-09-ORM-Mapping-JPQL-Namedqueries" />
         <module name="Spring-11-RestTemplate" />
         <module name="rest1 (2)" />
+        <module name="Spring-06-JavaCode-PostConstructPredestroy" />
         <module name="Spring-05-Annotations-Autowired" />
         <module name="Spring-09-ORM-ManyToOne" />
         <module name="SpringMVC-ProjectManagement" />
@@ -78,6 +81,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="cybertek" target="11" />
+      <module name="Spring-07-SpringBoot-Demo" target="1.8" />
       <module name="Spring-08-SpringBoot-MVC-Form" target="11" />
       <module name="Spring-09-ORM-CinemaLab" target="11" />
       <module name="Spring-09-ORM-DrivedQueries" target="11" />
