@@ -1,5 +1,3 @@
-package com.cybertek;
-
 import com.cybertek.inrerfaces.Course;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -13,9 +11,8 @@ public class Spring07SpringBootDemoApplication {
 
         ApplicationContext container = SpringApplication.run(Spring07SpringBootDemoApplication.class, args);
 
-        Course course = container.getBean("java", Course.class);
-
-        System.out.println(course.getTeachingHours());
+       Course course = container.getBean("java", Course.class);
+       System.out.println(course.getTeachingHours());
     }
 
 
