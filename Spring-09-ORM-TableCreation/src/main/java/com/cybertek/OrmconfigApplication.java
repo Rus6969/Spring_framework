@@ -37,6 +37,7 @@ public class OrmconfigApplication {
         carRepository.save(c1);
         carRepository.save(c2);
         carRepository.save(c3);
+        carRepository.count();
 
         //ORM map object to Db , object values to table data
 

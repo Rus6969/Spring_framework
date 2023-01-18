@@ -4,6 +4,7 @@ import com.cybertek.entity.Department;
 import com.cybertek.entity.Employee;
 import com.cybertek.entity.Region;
 import com.cybertek.enums.Gender;
+import com.cybertek.repository.DepartmentRepository;
 import com.cybertek.repository.EmployeeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
@@ -18,7 +19,8 @@ import java.util.List;
 public class DataGenerator implements CommandLineRunner {
     @Autowired
     EmployeeRepository employeeRepository;
-
+    @Autowired
+    DepartmentRepository departmentRepository;
     @Override
     public void run(String... args) throws Exception {
 
