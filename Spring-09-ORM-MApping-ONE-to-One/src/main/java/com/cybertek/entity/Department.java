@@ -17,7 +17,8 @@ public class Department extends BaseEntity {
 
     private String department;
     private String division;
-// mapped by annotation is used to avoid creation t foreign keys , also we place here employee to use bidirectorial connection giving ownership to line 32 in Employee class
+    // mapped do not consider me as an owner give ownership department where is joinn column Employee class line 31-36 name should match with line 36 ""department"
+// mapped by annotation is used to avoid creation t foreign keys , also we place here employee to use bidirectorial connection giving ownership to line 33 in Employee class
     @OneToOne(mappedBy = "department")
     private Employee employee;
 

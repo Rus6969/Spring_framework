@@ -22,7 +22,7 @@ public class Person {
 
 
     // 1.in one to many we need create container one person needs to match many addresses  we need put it as a collection
-    // 2. we do not need Cascade.All bc we are not saving througt person we are saving through address class
+    // 2. we do not need Cascade.All bc we are not saving through person we are saving through address class
     @OneToMany(mappedBy = "person")
     private List<Address> addresses;
 

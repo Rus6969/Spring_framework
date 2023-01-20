@@ -14,7 +14,7 @@ import javax.persistence.Table;
 @Setter
 @NoArgsConstructor
 public class Department extends BaseEntity {
-
+// we do not add one to many or many to one bc its unidirectional example
     private String department;
     private String division;
 

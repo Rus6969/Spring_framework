@@ -27,11 +27,12 @@ public class Employee extends BaseEntity {
     private Gender gender;
 
     private int salary;
-// we need cascade to create realtionship and what to do with department object (should we add it , merge , or detach)
-    @OneToOne(cascade = CascadeType.ALL)
+// we need cascade to create relationship and what to do with department object (should we add it , merge , or detach)
+    @OneToOne(cascade = CascadeType.ALL,fetch = FetchType.LAZY)
+    // in join column we can customized name of primary ky , by default it would be department id
     @JoinColumn(name = "department_id")
     // @OneToOne(cascade = {CascadeType.DETACH,CascadeType.MERGE,CascadeType.PERSIST})
-    //example above means whenever I do actions in employeetable same actions will be done in department table
+    //example above means whenever I do actions in employee table same actions will be done in department table
     private Department department;
 
     @OneToOne(cascade = CascadeType.ALL,fetch = FetchType.LAZY)

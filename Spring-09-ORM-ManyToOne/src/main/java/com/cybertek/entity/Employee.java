@@ -27,7 +27,7 @@ public class Employee extends BaseEntity {
     private Gender gender;
 
     private int salary;
-// we are not using cascade all bc we had to delete correspond object(whic is deartment since we are adress to department several times w need to change cascade)
+// we are not using cascade all bc we had to delete correspond object(which is department since we are adress to department several times w need to change cascade)
     @ManyToOne(cascade = {CascadeType.DETACH,CascadeType.MERGE,CascadeType.PERSIST},fetch = FetchType.LAZY)
     @JoinColumn(name = "department_id")
     private Department department;

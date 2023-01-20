@@ -17,10 +17,11 @@ import java.util.List;
 
 @Component
 public class DataGenerator implements CommandLineRunner {
+    
     @Autowired
     EmployeeRepository employeeRepository;
-    @Autowired
-    DepartmentRepository departmentRepository;
+//    @Autowired
+//    DepartmentRepository departmentRepository;
     @Override
     public void run(String... args) throws Exception {
 
@@ -65,6 +66,7 @@ public class DataGenerator implements CommandLineRunner {
             departmentList.addAll(Arrays.asList(d1, d2, d3, d4, d5));
 
             employeeRepository.saveAll(employeeList);
+           // departmentRepository.saveAll(departmentList);
 
 
         }
