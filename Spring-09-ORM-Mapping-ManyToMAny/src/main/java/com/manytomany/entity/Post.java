@@ -20,7 +20,7 @@ public class Post {
 
     private String title;
     private String description;
-    // many to many works only with additionla table
+    // many to many works only with additional table
     //  when we work many to many we use set , bc of performance issue , if use lists hibernate will run queries twice
     @ManyToMany(cascade = {CascadeType.MERGE,CascadeType.PERSIST})
     //change name for join table

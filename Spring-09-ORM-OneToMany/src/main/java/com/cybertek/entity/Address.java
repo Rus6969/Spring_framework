@@ -10,7 +10,7 @@ import javax.persistence.*;
 @NoArgsConstructor
 @Getter
 @Setter
-public class Address {
+public class  Address {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -18,7 +18,7 @@ public class Address {
 
     private String street;
     private String zipCode;
-
+// add cascade all why we are not using Cacading
     @ManyToOne
     private Person person;
 
